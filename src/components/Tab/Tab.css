@@ -1,0 +1,20 @@
+@import 'antd/dist/antd.min.css';
+
+.d-flex{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 77%;
+    margin: auto;
+}
+
+#rc-tabs-0-panel-1,
+#rc-tabs-0-panel-3,
+#rc-tabs-0-panel-5{
+    flex-direction: row-reverse;
+}
+
+.img-demo{
+    max-width: 600px;
+    max-height: 400px;
+}
