@@ -18,12 +18,6 @@ export default function Navbar() {
         <a href="">logo</a>
       </div>
       <div className="menuCon">
-        <div className="leftMenu">
-          <LeftMenu />
-        </div>
-        <div className="rightMenu">
-          <RightMenu />
-        </div>
         <Button className="barsMenu" type="primary" onClick={showDrawer}>
           <span className="barsBtn"></span>
         </Button>
@@ -34,11 +28,13 @@ export default function Navbar() {
           onClose={onClose}
           visible={visible}
         >
-          {/* <LeftMenu /> */}
-          {/* <RightMenu /> */}
+          <BottoneSignIn />
+          <BottoneModale />
+          <button>Dashboard</button>
         </Drawer>
         <BottoneSignIn />
         <BottoneModale />
+        <button>Dashboard</button>
       </div>
     </nav>
   );
