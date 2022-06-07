@@ -1,5 +1,8 @@
+import {Tab} from '../components/Tab/Tab'
+
 const Homepage = () => {
-  return <h1>Homepage</h1>;
+  return <Tab></Tab>;
+  
 };
 
 export default Homepage;
