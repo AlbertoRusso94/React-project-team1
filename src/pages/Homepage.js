@@ -1,6 +1,6 @@
 import Hero from "../components/Hero";
 const Homepage = () => {
-  return <Hero />;
+  return <h1>Homepage</h1>;
 };
 
 export default Homepage;
