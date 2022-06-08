@@ -50,7 +50,6 @@
 @media screen and (max-width: 820px) {
   .abbContainer {
     flex-direction: column;
-    gap: 10rem;
   }
 
   #card1 {
@@ -60,6 +59,7 @@
 
 @media screen and (max-width: 576px) {
   .abbContainer {
+    flex-direction: column;
     gap: 0;
     margin-top: 10rem;
     background: radial-gradient(
@@ -67,6 +67,10 @@
       rgb(255, 153, 0) 0%,
       rgba(34, 40, 49, 1) 100%
     );
+  }
+
+  .card {
+    padding: 2rem !important;
   }
 
   .ant-card-body {

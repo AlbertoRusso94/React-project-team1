@@ -5,7 +5,7 @@ import { CheckSquareTwoTone } from '@ant-design/icons';
 const Abbonamenti = () => (
   <Row>
     <div className="abbContainer">
-      <Col lg={8} md={14} xs={22}>
+      <Col xxl={6} xl={8} lg={10} md={11} xs={22}>
         <Card
           className="card"
           id="card1"
@@ -68,7 +68,7 @@ const Abbonamenti = () => (
           </div>
         </Card>
       </Col>
-      <Col lg={8} md={14} xs={22}>
+      <Col xxl={6} xl={8} lg={10} md={11} xs={22}>
         <Card className="card" style={{ border: '3px solid #ff4d4f' }}>
           <h1>
             Only <strong>$670</strong> /year
