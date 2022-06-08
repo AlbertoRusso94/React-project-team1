@@ -1,12 +1,14 @@
-import { Tab } from '../components/tab/Tab';
-import Abbonamenti from '../components/abbonamenti/Abbonamenti';
+import Hero from '../components/Hero';
+import { Tab } from '../components/tab/Tab.js';
+import Abbonamenti from '../components/abbonamenti/Abbonamenti.js';
 
 const Homepage = () => {
   return (
-    <div style={{ paddingTop: '800px' }}>
+    <>
+      <Hero />
       <Tab></Tab>
       <Abbonamenti />
-    </div>
+    </>
   );
 };
 
