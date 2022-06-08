@@ -4,9 +4,9 @@ import Abbonamenti from "../components/Abbonamenti";
 const Homepage = () => {
   return (
     <>
-      <h1>Homepage</h1>
-      <Tab></Tab>;
-      <Abbonamenti />
+        <h1>Homepage</h1>
+        <Tab></Tab>
+        <Abbonamenti />
     </>
   );
 };
