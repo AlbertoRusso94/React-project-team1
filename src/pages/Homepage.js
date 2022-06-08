@@ -1,14 +1,16 @@
+import Hero from "../components/Hero";
 import {Tab} from '../components/Tab/Tab'
 import Abbonamenti from "../components/Abbonamenti";
 
 const Homepage = () => {
   return (
     <>
-      <h1>Homepage</h1>
+      <Hero />;
       <Tab></Tab>;
       <Abbonamenti />
     </>
   );
+
 };
 
 export default Homepage;
