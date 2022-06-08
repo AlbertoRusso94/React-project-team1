@@ -1,19 +1,23 @@
-import React from "react";
-import "./Tab.css";
-import { Col, Row } from "antd";
-import { Tabs } from "antd";
+import React from 'react';
+import './Tab.css';
+import { Col, Row } from 'antd';
+import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 
 export class Tab extends React.Component {
   state = {};
   render() {
     return (
-      <>
+      <div className="tabContainer">
         <Row>
           <Col span={24}>
-            <Tabs defaultActiveKey="1" centered>
+            <Tabs
+              defaultActiveKey="1"
+              centered
+              style={{ marginBottom: '5rem', color: '#eee' }}
+            >
               <TabPane tab="Why us?" key="1" className="d-flex" id="tab-1">
-                <div className="text-left">
+                <div className="text-left ">
                   <h1>Why us?</h1>
                   <h3>
                     Ex-traders building the best option AI algorithm, which
@@ -28,17 +32,17 @@ export class Tab extends React.Component {
                   </h3>
                 </div>
 
-                <div className="img-right">
+                {/* <div className="img-right">
                   <img
                     src="../img/img-demo.png"
                     alt=""
                     className="img-demo"
                   ></img>
-                </div>
+                </div> */}
               </TabPane>
 
               <TabPane
-                tab="Competitive Advantage of Artificial Intelligence"
+                tab="Competitive Advantage of AI"
                 key="2"
                 className="d-flex"
               >
@@ -53,23 +57,18 @@ export class Tab extends React.Component {
                   </h3>
                 </div>
 
-                <div className="img-right">
+                {/* <div className="img-right">
                   <img
                     src="../img/img-demo.png"
                     alt=""
                     className="img-demo"
                   ></img>
-                </div>
+                </div> */}
               </TabPane>
 
-              <TabPane
-                tab="Speed & time are at our core"
-                key="3"
-                className="d-flex"
-                id="tab-3"
-              >
+              <TabPane tab="Speed & Time" key="3" className="d-flex" id="tab-3">
                 <div className="text-left">
-                  <h1>WSpeed & time are at our core</h1>
+                  <h1>Speed & Time are at our Core</h1>
                   <h3>
                     Speed means everything in trading. With perfectly timed
                     notifications to place winning trades ahead of your
@@ -79,22 +78,18 @@ export class Tab extends React.Component {
                   </h3>
                 </div>
 
-                <div className="img-right">
+                {/* <div className="img-right">
                   <img
                     src="../img/img-demo.png"
                     alt=""
                     className="img-demo"
                   ></img>
-                </div>
+                </div> */}
               </TabPane>
 
-              <TabPane
-                tab="Built in options chain scanning"
-                key="4"
-                className="d-flex"
-              >
+              <TabPane tab="Chain Scanning" key="4" className="d-flex">
                 <div className="text-left">
-                  <h1>Built in options chain scanning</h1>
+                  <h1>Built in Options Chain Scanning</h1>
                   <h3>
                     Overwhelmed by varying strike prices and which options to
                     buy? We scan the entire options chain so you don’t have to,
@@ -103,23 +98,23 @@ export class Tab extends React.Component {
                   </h3>
                 </div>
 
-                <div className="img-right">
+                {/* <div className="img-right">
                   <img
                     src="../img/img-demo.png"
                     alt=""
                     className="img-demo"
                   ></img>
-                </div>
+                </div> */}
               </TabPane>
 
               <TabPane
-                tab="Powerful for beginners & seasoned professionals alike"
+                tab="Powerful for Beginners"
                 key="5"
                 className="d-flex"
                 id="tab-5"
               >
                 <div className="text-left">
-                  <h1>Powerful for beginners & seasoned professionals alike</h1>
+                  <h1>Powerful for Beginners & Seasoned Professionals alike</h1>
                   <h3>
                     Whether you are just starting your journey with options or
                     work on the street yourself, our tools are easy enough to
@@ -128,18 +123,18 @@ export class Tab extends React.Component {
                   </h3>
                 </div>
 
-                <div className="img-right">
+                {/* <div className="img-right">
                   <img
                     src="../img/img-demo.png"
                     alt=""
                     className="img-demo"
                   ></img>
-                </div>
+                </div> */}
               </TabPane>
             </Tabs>
           </Col>
         </Row>
-      </>
+      </div>
     );
   }
 }

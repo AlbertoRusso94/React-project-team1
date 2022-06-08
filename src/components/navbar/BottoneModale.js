@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import { Button, Modal } from "antd";
-import FormModal from "./FormModal";
+import React, { useState } from 'react';
+import { Button, Modal } from 'antd';
+import FormModal from './FormModal';
 const BottoneModale = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 

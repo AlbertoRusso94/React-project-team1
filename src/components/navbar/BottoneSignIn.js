@@ -1,6 +1,6 @@
-import { Button, Modal } from "antd";
-import { useState } from "react";
-import FormSignIn from "./FormSignIn";
+import { Button, Modal } from 'antd';
+import { useState } from 'react';
+import FormSignIn from './FormSignIn';
 
 const BottoneSignIn = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -19,9 +19,7 @@ const BottoneSignIn = () => {
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
-        SignIn
-      </Button>
+      <Button onClick={showModal}>SignIn</Button>
       <Modal
         title="SignIn"
         visible={isModalVisible}

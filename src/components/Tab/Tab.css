@@ -1,20 +1,67 @@
 @import 'antd/dist/antd.min.css';
 
-.d-flex{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 77%;
-    margin: auto;
+.tabContainer {
+  height: 25rem;
+  background: radial-gradient(
+    150px circle at 5% 50%,
+    rgba(178, 63, 251, 1) 80%,
+    rgba(34, 40, 49, 1) 90%
+  );
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 77%;
+  margin: auto;
 }
 
 #rc-tabs-0-panel-1,
 #rc-tabs-0-panel-3,
-#rc-tabs-0-panel-5{
-    flex-direction: row-reverse;
+#rc-tabs-0-panel-5 {
+  flex-direction: row-reverse;
 }
 
-.img-demo{
-    max-width: 600px;
-    max-height: 400px;
+.img-demo {
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.ant-tabs-nav-wrap {
+  border-bottom: 2px solid #222831 !important;
+}
+
+/* .ant-tabs-nav-wrap-ping-right {
+  border-bottom: 10px solid #222831 !important;
+} */
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15%;
+}
+
+.text-left h1 {
+  color: #00adb5 !important;
+  text-shadow: 1px 1px 10px rgb(34 114 178);
+}
+
+.text-left h3 {
+  color: #eeeeee !important;
+  font-weight: 300;
+  text-shadow: 1px 1px 20px #b9b9b9;
+}
+
+@media screen and (max-width: 576px) {
+  .tabContainer {
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .ant-tabs-nav-wrap {
+    border-bottom: 5px solid #222831 !important;
+  }
 }

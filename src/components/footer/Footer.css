@@ -1,0 +1,28 @@
+.img-logo {
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  color: orangered;
+}
+
+.footerContainer {
+  background-color: #393e46;
+  color: #eee;
+  padding: 2rem 4rem;
+}
+
+@media screen and (max-width: 576px) {
+  .footerContainer {
+    padding: 2rem 1rem;
+  }
+
+  .disclaimer {
+    padding-top: 1rem !important;
+  }
+}
