@@ -1,0 +1,12 @@
+.img-logo {
+    width:40%;
+}
+
+.footer-links {
+    text-decoration: none;
+}
+
+.footer-links:hover {
+    color: orangered;
+}
+
