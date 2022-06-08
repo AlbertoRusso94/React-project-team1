@@ -24,7 +24,7 @@ body {
   height: 100vh;
   background: radial-gradient(
     250px circle at 5% 50%,
-    rgb(0, 187, 255) 30%,
+    #00adb5 30%,
     rgba(34, 40, 49, 1) 90%
   );
 }

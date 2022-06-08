@@ -1,5 +1,5 @@
 import './Hero.css';
-import foto from '../../arbitrage-1.png';
+import foto from '../../imgs/arbitrage-1.png';
 import 'antd/dist/antd.min.css';
 import { Row, Col } from 'antd';
 import { Typography } from 'antd';
