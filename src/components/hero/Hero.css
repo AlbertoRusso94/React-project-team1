@@ -10,13 +10,18 @@
 
 .textHero {
   color: #eee !important;
+  z-index: 9999 !important;
 }
 
 @media screen and (max-width: 820px) {
-  .hero-img {
-    width: 150%;
+  .heroContainer {
     height: 80%;
-    transform: translate(-25%, 7%);
+  }
+
+  .hero-img {
+    width: 200%;
+    height: 80%;
+    transform: translate(-35%, 7%);
   }
 }
 @media screen and (max-width: 576px) {

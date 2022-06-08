@@ -29,13 +29,13 @@
   max-height: 400px;
 }
 
-.ant-tabs-nav-wrap {
+/* .ant-tabs-nav-wrap {
   border-bottom: 2px solid #222831 !important;
-}
-
-/* .ant-tabs-nav-wrap-ping-right {
-  border-bottom: 10px solid #222831 !important;
 } */
+
+.ant-tabs-top > .ant-tabs-nav::before {
+  display: none !important;
+}
 
 .text-left {
   display: flex;
@@ -59,6 +59,10 @@
 @media screen and (max-width: 820px) {
   .tabContainer {
     margin-top: -8rem;
+  }
+
+  .ant-tabs-nav-wrap {
+    padding: 0 2rem;
   }
 }
 
