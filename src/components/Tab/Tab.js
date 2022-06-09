@@ -14,7 +14,7 @@ export const Tab = () => {
       } else {
         setKey((prevState) => +prevState + 1);
       }
-    }, 2000);
+    }, 12000);
 
     return () => {
       clearInterval(interval);

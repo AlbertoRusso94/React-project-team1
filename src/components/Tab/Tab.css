@@ -9,6 +9,10 @@
   );
 }
 
+.ant-tabs-tab-btn:focus {
+  color: #00adb5 !important;
+}
+
 .contentContainer {
   display: flex;
   align-items: center;
