@@ -1,0 +1,39 @@
+.navHome {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  margin-bottom: 10rem;
+  width: 100%;
+  align-items: center;
+  background-color: #393e46;
+  z-index: 9999;
+}
+
+.navImg {
+  width: 8rem;
+}
+
+.navBtnCont {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 820px) {
+  .navBtnCont {
+    width: 50%;
+    justify-content: end;
+    gap: 2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navBtnCont {
+    gap: 1rem;
+  }
+
+  .ant-tabs-nav-operations {
+    display: none !important;
+  }
+}

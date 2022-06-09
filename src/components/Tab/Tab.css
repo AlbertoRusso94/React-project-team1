@@ -1,20 +1,98 @@
-@import 'antd/dist/antd.min.css';
+.tabContainer {
+  margin-top: 2rem;
+  height: 25rem;
+  margin-bottom: 5rem;
+  background: radial-gradient(
+    150px circle at 95% 50%,
+    rgba(178, 63, 251, 1) 80%,
+    rgba(34, 40, 49, 1) 90%
+  );
+}
 
-.d-flex{
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    width: 77%;
-    margin: auto;
+.ant-tabs-tab-btn:focus {
+  color: #00adb5 !important;
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  width: 77%;
+  margin: auto;
 }
 
 #rc-tabs-0-panel-1,
 #rc-tabs-0-panel-3,
-#rc-tabs-0-panel-5{
-    flex-direction: row-reverse;
+#rc-tabs-0-panel-5 {
+  flex-direction: row-reverse;
 }
 
-.img-demo{
-    max-width: 600px;
-    max-height: 400px;
+.img-demo {
+  max-width: 600px;
+  max-height: 400px;
+}
+
+.ant-tabs-top > .ant-tabs-nav::before {
+  display: none !important;
+}
+
+.text-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.text-left h1 {
+  color: #00adb5 !important;
+  text-shadow: 1px 1px 10px rgb(34 114 178);
+}
+
+.tabIcon {
+  width: 250px;
+}
+
+.text-left h3 {
+  width: 60%;
+  color: #eeeeee !important;
+  font-weight: 300;
+  text-shadow: 1px 1px 20px #b9b9b9;
+}
+
+@media screen and (max-width: 820px) {
+  .tabContainer {
+    margin-top: -8rem;
+  }
+
+  .ant-tabs-nav-wrap {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .tabContainer {
+    margin-top: 5rem;
+    margin-bottom: 25rem;
+  }
+
+  .tabIcon {
+    width: 40%;
+  }
+
+  .text-left h3 {
+    width: 80%;
+  }
+
+  .ant-tabs-nav-wrap {
+    padding: 0 2rem;
+    overflow-x: scroll;
+  }
 }
