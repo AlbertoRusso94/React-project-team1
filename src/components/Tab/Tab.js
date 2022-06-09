@@ -10,11 +10,11 @@ export class Tab extends React.Component {
     return (
       <div className="modifyTabs">
         <Row>
-          <Col span={24}>
+          <Col span={24} className="marginTabs">
             <Tabs defaultActiveKey="1" centered>
               <TabPane tab="Why us?" key="1" className="d-flex" id="tab-1">
                 <div className="text-left">
-                  <h1>Why us?</h1>
+                  <span className="titleTabs">Why us?</span>
                   <p className="pTabs">
                     Ex-traders building the best option<br></br> 
                     AI algorithm, which
@@ -45,8 +45,8 @@ export class Tab extends React.Component {
                 className="d-flex"
               >
                 <div className="text-left">
-                  <h1>Competitive Advantage of <br></br>
-                  Artificial Intelligence</h1>
+                  <span className="titleTabs">Competitive Advantage of <br></br>
+                  Artificial Intelligence</span>
                   <p className="pTabs">
                     Harness the power of industry leading A.I. backed
                     algorithms.<br></br> 
@@ -75,7 +75,7 @@ export class Tab extends React.Component {
                 id="tab-3"
               >
                 <div className="text-left">
-                  <h1>WSpeed & time are at our core</h1>
+                  <span className="titleTabs">WSpeed & time are at our core</span>
                   <p className="pTabs">
                     Speed means everything in trading. With perfectly timed<br></br>
                     notifications to place<br></br> 
@@ -103,7 +103,7 @@ export class Tab extends React.Component {
                 className="d-flex"
               >
                 <div className="text-left">
-                  <h1>Built in options chain scanning</h1>
+                  <span className="titleTabs">Built in options chain scanning</span>
                   <p className="pTabs">
                     Overwhelmed by varying strike prices and<br></br> 
                     which options to
@@ -131,8 +131,8 @@ export class Tab extends React.Component {
                 id="tab-5"
               >
                 <div className="text-left">
-                  <h1>Powerful for beginners & seasoned<br></br> 
-                  professionals alike</h1>
+                  <span className="titleTabs">Powerful for beginners & seasoned<br></br> 
+                  professionals alike</span>
                   <p className="pTabs">
                     Whether you are just starting your<br></br> 
                     journey with options or

@@ -5,11 +5,14 @@
     background-color: #112D4E;
     width: 100vw;
     height: 100vh;
+}
 
-
+.marginTabs{
+    margin-top: 5rem;
 }
 
 .d-flex{
+    margin-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -29,11 +32,11 @@
     max-height: 400px;
 } 
 
-h1{
+.titleTabs{
     font-size: 35px;
     font-family: 'Cardo', serif;
     font-weight: 800;
-    color: rgb(191, 210, 227)
+    color: rgb(139, 155, 169);
 }
 
 .pTabs{

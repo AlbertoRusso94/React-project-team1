@@ -22,7 +22,11 @@ const Footer = () => {
 
       <Row>
         <Col span={23} offset={1}>
-          <p className="disclaimer">Disclaimer: Please be aware that trading stocks, futures, stock options, and futures options involves a substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. INFORMATION IS FOR GENERAL EDUCATIONAL AND RESEARCH PURPOSES AND SHOULD NOT BE CONSTRUED AS INDIVIDUAL INVESTMENT ADVICE. More info <a href="https://www.optionsfy.com/disclaimer" className="footer-links">here</a></p>
+          <p className="disclaimer modifyPFooter">Disclaimer: Please be aware that trading stocks,
+          futures, stock options, and futures options involves a substantial 
+          risk of loss and is not suitable for all investors. Past performance is
+          not necessarily indicative of future results.<br></br>
+          INFORMATION IS FOR GENERAL EDUCATIONAL AND RESEARCH PURPOSES AND SHOULD NOT BE CONSTRUED AS INDIVIDUAL INVESTMENT ADVICE.  More info <a href="https://www.optionsfy.com/disclaimer" className="footer-links">here</a></p>
         </Col>
       </Row>
     </div>

@@ -5,12 +5,12 @@ import Abbonamenti from "../components/Abbonamenti";
 const Homepage = () => {
   return (
     <>
-      <Hero />;
-      <Tab></Tab>;
+      <Hero />
+      <Tab></Tab>
       <Abbonamenti />
     </>
-  );
+  )
 
-};
+}
 
 export default Homepage;

@@ -1,5 +1,5 @@
 .img-logo {
-    width:40%;
+    width:30%;
 }
 
 .footer-links {
@@ -7,10 +7,19 @@
 }
 
 .footer-links:hover {
-    color: orangered;
+    color: #0C7B93;
 }
 
 .modifyFooter{
     background-color: #142850;
-    height: 30vh;
+    height: 25vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    color: rgb(191, 210, 227);
+}
+
+.modifyPFooter{
+    font-family: 'Joan', serif;
+    font-size: 16px;
 }
