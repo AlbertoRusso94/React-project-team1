@@ -1,0 +1,50 @@
+.cardPremium{
+display:flex;
+flex-direction:column;
+justify-content:center;
+gap: 20px;
+align-items:center;
+padding: 20px;
+display: inline-block;
+vertical-align: middle;
+-webkit-transform: perspective(1px) translateZ(0);
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-property: box-shadow, transform;
+transition-property: box-shadow, transform;
+}
+.cardPremium:hover, .cardPremium:focus, .cardPremium:active {
+    box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+.titleCard{
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Cardo', serif;
+}
+
+.subtitleCard{
+    font-size: 20px;
+    text-decoration:underline;
+}
+
+li{
+    font-size: 14px;
+    color:black;
+    font-family: 'Joan', serif;
+}
+ul{
+    padding:0;
+}
+
+.list{
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+}
+
+

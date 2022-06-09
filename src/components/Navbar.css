@@ -9,8 +9,8 @@
 }
 
 .menuBar{
-/*   background-color: #27496D; */
-  background-color: #142850;
+  background-color: #27496D;
+/*   background-color: #142850; */
   width: 100vw;
   height: 10vh;
   display:flex;
@@ -20,7 +20,7 @@
 }
 
 .menuCon{
-  width: 50vw;
+  width: 25vw;
   display: flex;
   justify-content:center;
   gap: 20px;

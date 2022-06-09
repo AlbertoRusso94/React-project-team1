@@ -11,8 +11,14 @@
 }
 
 .modifyFooter{
-    background-color: #142850;
+/*     background-color: #142850; */
+/* background: rgb(20,40,80);
+background: linear-gradient(180deg, rgba(20,40,80,1) 60%, rgba(63,114,175,1) 50%); */
+background: rgb(63,114,175); 
+
+background: radial-gradient(circle, rgba(63,114,175,1) 0%, rgba(20,40,80,1) 85%);
     height: 25vh;
+    width: 100vw;
     display:flex;
     flex-direction:column;
     justify-content:center;

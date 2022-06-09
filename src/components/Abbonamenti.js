@@ -3,7 +3,7 @@ import Premium from "./Premium";
 import Standard from "./Standard";
 
 const Abbonamenti = () => (
-  <div className="cards">
+  <div className="cardsComponent">
     <Standard />
     <Premium />
   </div>

@@ -1,4 +1,4 @@
-.cards{
+.cardsComponent{
     display:flex;
     flex-direction:row;
     justify-content:space-around;
@@ -20,4 +20,9 @@
     font-weight: 600;
     font-size: 15px;
     border:none;
+    color: white;
+}
+
+.buttonStandard{
+    background-color: #246cfd;
 }

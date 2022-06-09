@@ -18,10 +18,10 @@ export default function Navbar() {
         <a href="https://www.google.com/">logo</a>
       </div>
       <div className="menuCon">
-        <Button className="barsMenu" type="primary" onClick={showDrawer}>
+{/*         <Button className="barsMenu" type="primary" onClick={showDrawer}>
           <span className="barsBtn"></span>
-        </Button>
-        <Drawer
+        </Button> */}
+{/*         <Drawer
           title="Basic Drawer"
           placement="right"
           closable={false}
@@ -30,8 +30,8 @@ export default function Navbar() {
         >
           <BottoneSignIn />
           <BottoneModale />
-{/*           <button>Dashboard</button> */}
-        </Drawer>
+          <button>Dashboard</button>
+        </Drawer> */}
         <BottoneSignIn />
         <BottoneModale />
      {/*    <button>Dashboard</button> */}

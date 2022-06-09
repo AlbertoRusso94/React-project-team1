@@ -1,4 +1,11 @@
 .modifyBtnNavbar{
     width: 130px;
-    height: 40px;
+    height: 30px;
+    border-radius: 6px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    color: rgb(191, 210, 227); 
+    font-size: 14px;
+    font-weight: 600;
 }
