@@ -18,3 +18,7 @@
     max-width: 600px;
     max-height: 400px;
 }
+
+ .ant-tabs-tab-btn:focus {
+    color: rgba(0, 0, 0, 0.85) !important;
+} 

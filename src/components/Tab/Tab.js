@@ -5,13 +5,46 @@ import { Tabs } from "antd";
 const { TabPane } = Tabs;
 
 export class Tab extends React.Component {
-  state = {};
+  state = {
+    count: 1,
+  };
+
+  componentDidMount() {
+    this.newIntervalId = setInterval(() => {
+      console.log(this.state.count);
+
+      if (this.state.count === 5) {
+        this.setState({ count: 1});
+      } else {
+        this.setState((prevState) => {
+          console.log(prevState.count)
+          return {
+            count: prevState.count +1,
+          };
+        });
+      }
+    }, 12000);
+  }
+
+  handleChange = (key) => {
+    console.log('sono in key', typeof key);
+    this.setState({ count: parseInt(key)});
+  };
+
+  componentWillUnmount() {
+    clearInterval(this.newIntervalId);
+  }
+
   render() {
     return (
       <>
         <Row>
           <Col span={24}>
-            <Tabs defaultActiveKey="1" centered>
+            <Tabs
+              activeKey={this.state.count.toString()}
+              onChange={this.handleChange}
+              centered
+            >
               <TabPane tab="Why us?" key="1" className="d-flex" id="tab-1">
                 <div className="text-left">
                   <h1>Why us?</h1>
