@@ -1,17 +1,14 @@
 import './Footer.css';
 import 'antd/dist/antd.min.css';
 import { Row, Col } from 'antd';
+import logo from '../../imgs/logo.png';
 
 const Footer = () => {
   return (
     <div className="footerContainer">
       <Row justify="space-between" align="middle">
         <Col span={23} offset={1} md={{ span: 8, offset: 1 }}>
-          <img
-            src="https://www.optionsfy.com/static/media/oLogo.89f9797f.png"
-            className="img-logo"
-            alt="logo"
-          />
+          <img src={logo} className="img-logo" alt="logo" />
           <p>power your alpha</p>
         </Col>
 

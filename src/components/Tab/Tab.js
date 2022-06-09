@@ -12,7 +12,7 @@ export class Tab extends React.Component {
         <Row>
           <Col span={24}>
             <Tabs
-              defaultActiveKey="1"
+              defaultActiveKey="3"
               centered
               style={{ color: '#eee', marginTop: '3rem' }}
             >

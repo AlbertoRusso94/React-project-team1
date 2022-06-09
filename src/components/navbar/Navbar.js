@@ -4,6 +4,7 @@ import BottoneSignIn from './BottoneSignIn';
 import { useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
+import logo from '../../imgs/logo.png';
 
 export default function Navbar() {
   const [visible, setVisible] = useState(false);
@@ -16,11 +17,7 @@ export default function Navbar() {
       <Col span={24}>
         <nav className="menuBar navHome">
           <div className="logo">
-            <img
-              src="https://www.optionsfy.com/static/media/oLogo.89f9797f.png"
-              alt="logo"
-              className="navImg"
-            />
+            <img src={logo} alt="logo" className="navImg" />
           </div>
           <div className="menuCon navBtnCont">
             {/* <Button className="barsMenu" type="primary" onClick={showDrawer}>
