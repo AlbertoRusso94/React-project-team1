@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
 import FormModal from './FormModal';
-const BottoneModale = () => {
+const BottoneModale = (props) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
@@ -27,7 +27,7 @@ const BottoneModale = () => {
         onOk={handleOk}
         onCancel={handleCancel}
       >
-        <FormModal />
+        <FormModal onHandleStorage={props.onHandleStorage} />
       </Modal>
     </>
   );

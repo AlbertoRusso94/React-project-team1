@@ -2,7 +2,7 @@ import { Button, Modal } from 'antd';
 import { useState } from 'react';
 import FormSignIn from './FormSignIn';
 
-const BottoneSignIn = () => {
+const BottoneSignUp = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
   const showModal = () => {
@@ -32,4 +32,4 @@ const BottoneSignIn = () => {
   );
 };
 
-export default BottoneSignIn;
+export default BottoneSignUp;

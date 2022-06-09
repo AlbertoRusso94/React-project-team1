@@ -1,13 +1,13 @@
-import React from "react";
-import { Form, Input, Button, Checkbox } from "antd";
+import React from 'react';
+import { Form, Input, Button, Checkbox } from 'antd';
 
-const FormModal = () => {
+const FormModal = (props) => {
   const onFinish = (values) => {
-    console.log("Success:", values);
+    props.onHandleStorage({ login: true });
   };
 
   const onFinishFailed = (errorInfo) => {
-    console.log("Failed:", errorInfo);
+    console.log('Failed:', errorInfo);
   };
 
   return (
@@ -32,7 +32,7 @@ const FormModal = () => {
         rules={[
           {
             required: true,
-            message: "Please input your username!",
+            message: 'Please input your username!',
           },
         ]}
       >
@@ -45,7 +45,7 @@ const FormModal = () => {
         rules={[
           {
             required: true,
-            message: "Please input your password!",
+            message: 'Please input your password!',
           },
         ]}
       >

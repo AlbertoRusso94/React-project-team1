@@ -1,16 +1,32 @@
 import './Navbar.css';
 import BottoneModale from './BottoneModale';
-import BottoneSignIn from './BottoneSignIn';
-import { useState } from 'react';
+import BottoneSignUp from './BottoneSignUp';
+import { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
 import logo from '../../imgs/logo.png';
 
 export default function Navbar() {
-  const [visible, setVisible] = useState(false);
+  // const [visible, setVisible] = useState(false);
+  const [stored, setStored] = useState(false);
 
-  const showDrawer = () => setVisible(true);
-  const onClose = () => setVisible(false);
+  // const showDrawer = () => setVisible(true);
+  // const onClose = () => setVisible(false);
+
+  const handleStorage = (data) => {
+    setStored(true);
+    localStorage.setItem('login', 'true');
+  };
+
+  useEffect(() => {
+    const log = localStorage.getItem('login');
+    log && setStored(true);
+  }, []);
+
+  const handleLogout = () => {
+    setStored(false);
+    localStorage.removeItem('login');
+  };
 
   return (
     <Row>
@@ -34,9 +50,11 @@ export default function Navbar() {
               <BottoneModale />
               <button>Dashboard</button>
             </Drawer> */}
-            <BottoneSignIn />
-            <BottoneModale />
-            {/* <button>Dashboard</button> */}
+            {!stored && <BottoneSignUp />}
+            {!stored && <BottoneModale onHandleStorage={handleStorage} />}
+
+            {stored && <Button type="primary">Dashboard</Button>}
+            {stored && <Button onClick={handleLogout}>Logout</Button>}
           </div>
         </nav>
       </Col>
