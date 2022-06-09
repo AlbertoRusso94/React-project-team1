@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Backgroundd() {
+export default function Backgroundd(props) {
   return (
     <>
       <div className="night">
@@ -571,6 +571,7 @@ export default function Backgroundd() {
           </div>
         </div>
       </div>
+        {props.children}
     </>
   );
 }

@@ -30,11 +30,11 @@ export default function Navbar() {
         >
           <BottoneSignIn />
           <BottoneModale />
-          <button>Dashboard</button>
+{/*           <button>Dashboard</button> */}
         </Drawer>
         <BottoneSignIn />
         <BottoneModale />
-        <button>Dashboard</button>
+     {/*    <button>Dashboard</button> */}
       </div>
     </nav>
   );

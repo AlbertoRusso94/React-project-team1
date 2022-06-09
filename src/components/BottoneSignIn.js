@@ -19,7 +19,7 @@ const BottoneSignIn = () => {
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
+      <Button type="primary" onClick={showModal} className="modifyBtnNavbar">
         SignIn
       </Button>
       <Modal

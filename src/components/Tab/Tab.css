@@ -1,11 +1,20 @@
 @import 'antd/dist/antd.min.css';
 
+.modifyTabs{
+    /*  margin-top: 12rem; */
+    background-color: #112D4E;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
 .d-flex{
     display: flex;
     align-items: center;
-    gap: 50px;
-    width: 77%;
-    margin: auto;
+    justify-content: center;
+    gap: 90px;
+    width: 100%;
     z-index: 1;
 }
 
@@ -16,7 +25,19 @@
 }
 
 .img-demo{
-    max-width: 600px;
+    max-width: 500px;
     max-height: 400px;
 } 
 
+h1{
+    font-size: 35px;
+    font-family: 'Cardo', serif;
+    font-weight: 800;
+    color: rgb(191, 210, 227)
+}
+
+.pTabs{
+    color:rgb(191, 210, 227);
+    font-size: 23px;
+    font-family: 'Joan', serif;
+}

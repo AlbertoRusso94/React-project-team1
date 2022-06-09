@@ -1,3 +1,35 @@
 .hero-img {
     width: 95%;
 }
+.modifyHero{
+    background-color: rgb(17,45,78);
+    background: linear-gradient(19deg, rgba(17,45,78,1) 35%, rgba(35,3,56,1) 62%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.colHero{
+    margin-top: 5rem;
+}
+
+.titleHero{
+    font-family: 'Cardo', serif;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 43px;
+    text-decoration: underline;
+    color:#F9F7F7;
+}
+
+.btnHero{
+    width: 160px;
+    height: 35px;
+}
+.inputHero{
+    width: 250px;
+    height: 30px;
+}
+.pHero{
+    font-size: 20px;
+    font-family: 'Joan', serif;
+    color: #DBE2EF;
+}

@@ -1,5 +1,4 @@
 #components-layout-demo-fixed .logo {
-  float: left;
   width: 120px;
   height: 31px;
   margin: 16px 24px 16px 0;
@@ -10,9 +9,20 @@
 }
 
 .menuBar{
-  background-color: #DBE2EF;
-  width: 100%;
+/*   background-color: #27496D; */
+  background-color: #142850;
+  width: 100vw;
   height: 10vh;
   display:flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items:center;
 }
+
+.menuCon{
+  width: 50vw;
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+}
+

@@ -3,14 +3,14 @@ import Navbar from './components/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Dashboard from './pages/Dashboard';
-import Background from './components/Background'
-import './components/Background.css'
+/* import Background from './components/Background'
+import './components/Background.css' */
 import 'antd/dist/antd.less';
 
 function App() {
   return (
     <>
-      <Background /> 
+{/*       <Background>  */}
       <Navbar />
       <BrowserRouter>
         <Routes>
@@ -19,6 +19,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+{/*       </Background> */}
     </>
   );
 }

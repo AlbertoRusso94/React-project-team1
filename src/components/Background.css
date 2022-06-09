@@ -1,7 +1,7 @@
 body {
     background: transparent;
     height: 100vh;
-    overflow: hidden;
+    width: 100vw;
     display: flex;
     font-family: 'Anton', sans-serif;
     justify-content: center;
@@ -52,7 +52,6 @@ body {
     height: 100vh;
     background: linear-gradient(-45deg, #0a1433 0%, #222b3f 100%);
   
-    overflow: hidden;
   }
   .star {
     position: absolute;

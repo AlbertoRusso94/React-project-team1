@@ -18,7 +18,7 @@ const BottoneModale = () => {
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
+      <Button className="modifyBtnNavbar" type="primary" onClick={showModal}>
         Login
       </Button>
       <Modal
