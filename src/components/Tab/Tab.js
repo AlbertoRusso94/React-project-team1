@@ -8,7 +8,7 @@ export class Tab extends React.Component {
   state = {};
   render() {
     return (
-      <>
+      <div className="tabContainer">
         <Row>
           <Col span={24}>
             <Tabs
@@ -19,6 +19,7 @@ export class Tab extends React.Component {
               <TabPane tab="Why Us?" key="1" className="d-flex" id="tab-1">
                 <div className="text-left">
                   <h1>Why Us?</h1>
+
                   <h3>
                     Ex-traders building the best option AI algorithm, which
                     makes large profits in minutes a day. We are ex-quants with
@@ -139,7 +140,7 @@ export class Tab extends React.Component {
             </Tabs>
           </Col>
         </Row>
-      </>
+      </div>
     );
   }
 }
