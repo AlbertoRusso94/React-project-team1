@@ -1,11 +1,19 @@
 .tabContainer {
   margin-top: 2rem;
   height: 25rem;
+  margin-bottom: 5rem;
   background: radial-gradient(
     150px circle at 95% 50%,
     rgba(178, 63, 251, 1) 80%,
     rgba(34, 40, 49, 1) 90%
   );
+}
+
+.contentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .d-flex {
@@ -36,7 +44,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 15%;
+  padding: 0 2rem;
 }
 
 .text-left h1 {
@@ -44,7 +52,12 @@
   text-shadow: 1px 1px 10px rgb(34 114 178);
 }
 
+.tabIcon {
+  width: 250px;
+}
+
 .text-left h3 {
+  width: 60%;
   color: #eeeeee !important;
   font-weight: 300;
   text-shadow: 1px 1px 20px #b9b9b9;
@@ -63,7 +76,15 @@
 @media screen and (max-width: 576px) {
   .tabContainer {
     margin-top: 5rem;
-    margin-bottom: 10rem;
+    margin-bottom: 25rem;
+  }
+
+  .tabIcon {
+    width: 40%;
+  }
+
+  .text-left h3 {
+    width: 80%;
   }
 
   .ant-tabs-nav-wrap {
