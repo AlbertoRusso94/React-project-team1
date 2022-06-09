@@ -1,5 +1,5 @@
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
+import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Dashboard from './pages/Dashboard';
