@@ -6,13 +6,17 @@ const { TabPane } = Tabs;
 
 export const Tab = () => {
   const [key, setKey] = useState(1);
+  const [left, setLeft] = useState(85);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (key === 5) {
+      if (key >= 5) {
         setKey(1);
+        setLeft(85);
       } else {
         setKey((prevState) => +prevState + 1);
+        console.log(key);
+        setLeft(100 - ((key + 1) * 20 - 5));
       }
     }, 12000);
 
@@ -21,12 +25,18 @@ export const Tab = () => {
     };
   }, [key]);
 
+  useEffect(() => {
+    setLeft(84);
+  }, []);
+
   const handleChange = (key) => {
     setKey(key);
+    setLeft(100 - (key * 20 - 5));
   };
 
   return (
     <div className="tabContainer">
+      <div className="gradientBg" style={{ left: `${left}%` }} />
       <Row>
         <Col span={24}>
           <Tabs

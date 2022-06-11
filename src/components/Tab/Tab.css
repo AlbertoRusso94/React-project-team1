@@ -2,10 +2,21 @@
   margin-top: 2rem;
   height: 25rem;
   margin-bottom: 5rem;
+  position: relative;
+}
+
+.gradientBg {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 10%;
+  left: -20%;
+  transition: 13s linear;
+
   background: radial-gradient(
-    150px circle at 95% 50%,
+    150px circle at 50% 50%,
     rgba(178, 63, 251, 1) 80%,
-    rgba(34, 40, 49, 1) 90%
+    rgba(23, 28, 35, 1) 90%
   );
 }
 

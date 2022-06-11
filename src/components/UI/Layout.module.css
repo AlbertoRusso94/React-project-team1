@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #222831;
+  background-color: rgba(23, 28, 35, 1);
   width: 100vw;
   height: 100vh;
   /* font-family: 'Ubuntu', sans-serif;
@@ -25,6 +25,6 @@ body {
   background: radial-gradient(
     250px circle at 5% 50%,
     #00adb5 80%,
-    rgba(34, 40, 49, 1) 90%
+    rgba(23, 28, 35, 1) 90%
   );
 }
