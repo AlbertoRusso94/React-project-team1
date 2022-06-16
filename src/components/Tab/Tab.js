@@ -5,32 +5,42 @@ import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 
 export const Tab = () => {
-  const [key, setKey] = useState(1);
+  // const [key, setKey] = useState(1);
+  const [left, setLeft] = useState(100);
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     if (key >= 5) {
+  //       setKey(1);
+  //       setLeft(85);
+  //     } else {
+  //       setKey((prevState) => +prevState + 1);
+  //       setLeft(100 - ((key + 1) * 20 - 5));
+  //     }
+  //   }, 12000);
+
+  //   return () => {
+  //     clearInterval(interval);
+  //   };
+  // }, [key]);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (key === 5) {
-        setKey(1);
-      } else {
-        setKey((prevState) => +prevState + 1);
-      }
-    }, 12000);
-
-    return () => {
-      clearInterval(interval);
-    };
-  }, [key]);
+    setLeft(85);
+  }, []);
 
   const handleChange = (key) => {
-    setKey(key);
+    // setKey(key);
+    setLeft(100 - ((+key + 1) * 20 - 5));
   };
 
   return (
     <div className="tabContainer">
+      <div className="gradientBg" style={{ left: `${left}%` }} />
       <Row>
         <Col span={24}>
           <Tabs
-            activeKey={key.toString()}
+            defaultActiveKey="1"
+            // activeKey={key.toString()}
             onChange={handleChange}
             centered
             style={{ color: '#eee', marginTop: '3rem' }}
