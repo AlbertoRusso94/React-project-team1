@@ -5,10 +5,14 @@ import { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
 import logo from '../../imgs/logo.png';
+import { useNavigate, Link, useLocation } from 'react-router-dom';
 
 export default function Navbar() {
+  const navigate = useNavigate();
+  const location = useLocation();
   // const [visible, setVisible] = useState(false);
-  const [stored, setStored] = useState(false);
+  const [stored, setStored] = useState(null);
+  const [url, setUrl] = useState('/');
 
   // const showDrawer = () => setVisible(true);
   // const onClose = () => setVisible(false);
@@ -20,8 +24,12 @@ export default function Navbar() {
 
   useEffect(() => {
     const log = localStorage.getItem('login');
-    log && setStored(true);
-  }, []);
+    if (log) setStored(true);
+    if (!log) {
+      navigate('/', { replace: true });
+    }
+    setUrl(location.pathname);
+  }, [location, navigate]);
 
   const handleLogout = () => {
     setStored(false);
@@ -53,8 +61,22 @@ export default function Navbar() {
             {!stored && <BottoneSignUp />}
             {!stored && <BottoneModale onHandleStorage={handleStorage} />}
 
-            {stored && <Button type="primary">Dashboard</Button>}
-            {stored && <Button onClick={handleLogout}>Logout</Button>}
+            {url === '/' ? (
+              stored && (
+                <Button type="primary">
+                  <Link to="/dashboard">Dashboard</Link>
+                </Button>
+              )
+            ) : (
+              <Button type="primary">
+                <Link to="/">Homepage</Link>
+              </Button>
+            )}
+            {stored && (
+              <Button onClick={handleLogout}>
+                <Link to="/">Logout</Link>
+              </Button>
+            )}
           </div>
         </nav>
       </Col>
