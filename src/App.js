@@ -5,15 +5,21 @@ import Homepage from './pages/Homepage';
 import Dashboard from './pages/Dashboard';
 import 'antd/dist/antd.less';
 import Layout from './components/UI/Layout';
+import Protected from './pages/Protected'
+import { useState } from 'react'
+
 
 function App() {
+  const [stored, setStored] = useState(null);
   return (
     <Layout>
       <BrowserRouter>
-        <Navbar />
+        <Navbar stored={stored} setStored={setStored} />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route element={<Protected user={stored}/>}>
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Route>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
