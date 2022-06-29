@@ -5,13 +5,11 @@ import { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
 import logo from '../../imgs/logo.png';
-import { useNavigate, Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-export default function Navbar() {
-  const navigate = useNavigate();
+export default function Navbar({stored, setStored}) {
   const location = useLocation();
   // const [visible, setVisible] = useState(false);
-  const [stored, setStored] = useState(null);
   const [url, setUrl] = useState('/');
 
   // const showDrawer = () => setVisible(true);
@@ -25,11 +23,8 @@ export default function Navbar() {
   useEffect(() => {
     const log = localStorage.getItem('login');
     if (log) setStored(true);
-    if (!log) {
-      navigate('/', { replace: true });
-    }
     setUrl(location.pathname);
-  }, [location, navigate]);
+  }, [location, setStored]);
 
   const handleLogout = () => {
     setStored(false);
