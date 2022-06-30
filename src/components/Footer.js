@@ -11,18 +11,18 @@ const Footer = () => {
           <p>power your alpha</p>
         </Col>
 
-        <Col span={23} offset={1} md={{ span: 8 }}>
+        <Col span={23} offset={1} md={{ span: 10 }}>
           <Row gutter={[8, 16]}>
-            <Col><a href="https://www.optionsfy.com/terms-of-services" className="footer-links">TERMS OF SERVICE</a></Col>
-            <Col><a href="https://www.optionsfy.com/privacy-policy" className="footer-links">PRIVACY POLICY</a></Col>
-            <Col><a href="https://www.optionsfy.com/disclaimer" className="footer-links">DISCLAIMER</a></Col>
+            <Col><a href="#" className="footer-links">TERMS OF SERVICE</a></Col>
+            <Col><a href="#" className="footer-links">PRIVACY POLICY</a></Col>
+            <Col><a href="#" className="footer-links">DISCLAIMER</a></Col>
           </Row>
         </Col>
       </Row>
 
       <Row>
         <Col span={23} offset={1}>
-          <p className="disclaimer">Disclaimer: Please be aware that trading stocks, futures, stock options, and futures options involves a substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. INFORMATION IS FOR GENERAL EDUCATIONAL AND RESEARCH PURPOSES AND SHOULD NOT BE CONSTRUED AS INDIVIDUAL INVESTMENT ADVICE. More info <a href="https://www.optionsfy.com/disclaimer" className="footer-links">here</a></p>
+          <p className="disclaimer">Disclaimer: Please be aware that trading stocks, futures, stock options, and futures options involves a substantial risk of loss and is not suitable for all investors. Past performance is not necessarily indicative of future results. INFORMATION IS FOR GENERAL EDUCATIONAL AND RESEARCH PURPOSES AND SHOULD NOT BE CONSTRUED AS INDIVIDUAL INVESTMENT ADVICE. More info <a href="#" className="footer-links">here</a></p>
         </Col>
       </Row>
     </>
