@@ -1,5 +1,5 @@
 import Hero from '../components/hero/Hero';
-import { Tab } from '../components/Tab/Tab.js';
+import { Tab } from '../components/tab/Tab.js';
 import Abbonamenti from '../components/abbonamenti/Abbonamenti.js';
 
 const Homepage = () => {

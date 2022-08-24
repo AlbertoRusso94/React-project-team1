@@ -1,6 +1,6 @@
 import { Button, Modal } from 'antd';
 import { useState } from 'react';
-import FormSignIn from './FormSignIn';
+import FormSignUp from './FormSignUp';
 
 const BottoneSignUp = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -19,14 +19,9 @@ const BottoneSignUp = () => {
 
   return (
     <>
-      <Button onClick={showModal}>SignIn</Button>
-      <Modal
-        title="SignIn"
-        visible={isModalVisible}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
-        <FormSignIn />
+      <Button onClick={showModal}>Sign Up</Button>
+      <Modal title="SignUp" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <FormSignUp />
       </Modal>
     </>
   );

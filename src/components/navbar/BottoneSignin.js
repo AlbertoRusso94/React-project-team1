@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Modal } from 'antd';
-import FormModal from './FormModal';
+import FormSignIn from './FormSignIn';
 const BottoneModale = (props) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -21,13 +21,8 @@ const BottoneModale = (props) => {
       <Button type="primary" onClick={showModal}>
         Login
       </Button>
-      <Modal
-        title="Login"
-        visible={isModalVisible}
-        onOk={handleOk}
-        onCancel={handleCancel}
-      >
-        <FormModal onHandleStorage={props.onHandleStorage} />
+      <Modal title="Login" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
+        <FormSignIn onHandleStorage={props.onHandleStorage} />
       </Modal>
     </>
   );

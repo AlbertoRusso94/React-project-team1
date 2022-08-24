@@ -1,9 +1,9 @@
+import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
 
-const FormModal = (props) => {
+const FormSignUp = () => {
   const onFinish = (values) => {
-    props.onHandleStorage({ login: true });
+    console.log('Success:', values);
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -12,7 +12,7 @@ const FormModal = (props) => {
 
   return (
     <Form
-      name="basic"
+      name="signup"
       labelCol={{
         span: 8,
       }}
@@ -38,6 +38,17 @@ const FormModal = (props) => {
       >
         <Input />
       </Form.Item>
+      <Form.Item
+        name="email"
+        label="Email"
+        rules={[
+          {
+            type: 'email',
+          },
+        ]}
+      >
+        <Input />
+      </Form.Item>
 
       <Form.Item
         label="Password"
@@ -50,17 +61,6 @@ const FormModal = (props) => {
         ]}
       >
         <Input.Password />
-      </Form.Item>
-
-      <Form.Item
-        name="remember"
-        valuePropName="checked"
-        wrapperCol={{
-          offset: 8,
-          span: 16,
-        }}
-      >
-        <Checkbox>Remember me</Checkbox>
       </Form.Item>
 
       <Form.Item
@@ -77,4 +77,4 @@ const FormModal = (props) => {
   );
 };
 
-export default FormModal;
+export default FormSignUp;

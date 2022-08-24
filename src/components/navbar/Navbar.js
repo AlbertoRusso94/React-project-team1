@@ -1,5 +1,5 @@
 import './Navbar.css';
-import BottoneModale from './BottoneModale';
+import BottoneModale from './BottoneSignin';
 import BottoneSignUp from './BottoneSignUp';
 import { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
@@ -7,7 +7,7 @@ import { Col, Row } from 'antd';
 import logo from '../../imgs/logo.png';
 import { Link, useLocation } from 'react-router-dom';
 
-export default function Navbar({stored, setStored}) {
+export default function Navbar({ stored, setStored }) {
   const location = useLocation();
   // const [visible, setVisible] = useState(false);
   const [url, setUrl] = useState('/');
