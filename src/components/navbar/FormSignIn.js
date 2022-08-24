@@ -1,13 +1,21 @@
-import React from 'react';
-import { Form, Input, Button, Checkbox } from 'antd';
+import React from "react";
+import { Form, Input, Button, Checkbox } from "antd";
 
 const FormSignIn = (props) => {
   const onFinish = (values) => {
-    props.onHandleStorage({ login: true });
+    
+
+    fetch("http://127.0.0.1:8000/auth/signin", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(values),
+    })
+      .then((response) => response.json())
+      .then((response) => props.onHandleStorage(JSON.stringify(response)));
   };
 
   const onFinishFailed = (errorInfo) => {
-    console.log('Failed:', errorInfo);
+    console.log("Failed:", errorInfo);
   };
 
   return (
@@ -32,7 +40,7 @@ const FormSignIn = (props) => {
         rules={[
           {
             required: true,
-            message: 'Please input your username!',
+            message: "Please input your username!",
           },
         ]}
       >
@@ -45,7 +53,7 @@ const FormSignIn = (props) => {
         rules={[
           {
             required: true,
-            message: 'Please input your password!',
+            message: "Please input your password!",
           },
         ]}
       >

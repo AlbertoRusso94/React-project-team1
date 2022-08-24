@@ -17,18 +17,18 @@ export default function Navbar({ stored, setStored }) {
 
   const handleStorage = (data) => {
     setStored(true);
-    localStorage.setItem('login', 'true');
+    localStorage.setItem('user', data);
   };
 
   useEffect(() => {
-    const log = localStorage.getItem('login');
+    const log = localStorage.getItem('user');
     if (log) setStored(true);
     setUrl(location.pathname);
   }, [location, setStored]);
 
   const handleLogout = () => {
     setStored(false);
-    localStorage.removeItem('login');
+    localStorage.removeItem('user');
   };
 
   return (

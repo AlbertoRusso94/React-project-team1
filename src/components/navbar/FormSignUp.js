@@ -1,9 +1,18 @@
 import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
 
+
+
 const FormSignUp = () => {
   const onFinish = (values) => {
     console.log('Success:', values);
+    fetch('http://127.0.0.1:8000/auth/signup',{
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(values)
+  }).then(response => response.json())
+  .then(response => console.log(response))
+  
   };
 
   const onFinishFailed = (errorInfo) => {
