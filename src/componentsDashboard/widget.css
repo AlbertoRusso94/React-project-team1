@@ -10,10 +10,31 @@
     gap: 40px;
 }
 
-.sectionWidgetflex{
-    width: 100vw;
+.sectionWidgetFlex{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 75px;
+    gap: 50px;
+}
+
+.padding{
+    padding: 75px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mediaQuerySection{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mediaQueryItem{
+        width: 300px;
+    }
+
+    .displayNone{
+        display: none;
+    }
+
 }

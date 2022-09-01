@@ -7,31 +7,34 @@ import "./widget.css";
 export default function Widget() {
   return (
     <>
-      <section className="dflex">
-        <AdvancedRealTimeChart className="mediaQueryRealTimeChart"
+      <section className="dflex mediaQuerySection">
+        <AdvancedRealTimeChart className="mediaQueryItem"
           theme="dark"
-          height={500}
+          width={600}
         ></AdvancedRealTimeChart>
         <MarketData colorTheme="dark" width={450} height={600}></MarketData>
       </section>
-      <section className="sectionWidgetFlex">
-        {/* <SymbolOverview
-          width={300}
+      <div className="mediaQueryItem displayNone padding">
+        <AdvancedRealTimeChart
+          symbol="MSFT"
+          theme="dark"
+          height={700}
+        ></AdvancedRealTimeChart>
+      </div>
+      <section className="sectionWidgetFlex mediaQuerySection ">
+        <SymbolOverview className="mediaQueryItem"
+          width={400}
+          height={350}
           colorTheme="dark"
           chartType="candlesticks"
           downColor="#800080"
           borderDownColor="#800080"
           wickDownColor="#800080"
-        /> */}
-        <AdvancedRealTimeChart className="mediaQueryRealTimeChart"
+        />
+        <AdvancedRealTimeChart className="mediaQueryItem"
           theme="dark"
-          height={300}
+          height={400}
           symbol=" NASDAQ"
-        ></AdvancedRealTimeChart>
-        <AdvancedRealTimeChart className="mediaQueryRealTimeChart"
-          theme="dark"
-          height={300}
-          symbol="MSFT"
         ></AdvancedRealTimeChart>
       </section>
       <div>
