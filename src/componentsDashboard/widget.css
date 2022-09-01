@@ -1,0 +1,19 @@
+*{
+    margin:0;
+}
+
+.dflex{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top: 100px;
+    gap: 40px;
+}
+
+.sectionWidgetflex{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
