@@ -11,7 +11,10 @@ const FormSignIn = (props) => {
       body: JSON.stringify(values),
     })
       .then((response) => response.json())
-      .then((response) => props.onHandleStorage(JSON.stringify(response)));
+      .then((response) => {if(response.message){ 
+        window.alert(response.message)
+        return
+      }props.onHandleStorage(JSON.stringify(response))});
   };
 
   const onFinishFailed = (errorInfo) => {

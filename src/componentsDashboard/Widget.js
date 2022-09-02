@@ -8,14 +8,14 @@ export default function Widget() {
   return (
     <>
       <section className="dflex mediaQuerySection">
-        <AdvancedRealTimeChart className="mediaQueryItem"
+        <AdvancedRealTimeChart className="mediaQueryItem displayNone"
           theme="dark"
           width={600}
         ></AdvancedRealTimeChart>
         <MarketData colorTheme="dark" width={450} height={600}></MarketData>
       </section>
       <div className="mediaQueryItem displayNone padding">
-        <AdvancedRealTimeChart
+        <AdvancedRealTimeChart className="displayNone" 
           symbol="MSFT"
           theme="dark"
           height={700}
@@ -31,7 +31,7 @@ export default function Widget() {
           borderDownColor="#800080"
           wickDownColor="#800080"
         />
-        <AdvancedRealTimeChart className="mediaQueryItem"
+        <AdvancedRealTimeChart className="mediaQueryItem displayNone"
           theme="dark"
           height={400}
           symbol=" NASDAQ"
