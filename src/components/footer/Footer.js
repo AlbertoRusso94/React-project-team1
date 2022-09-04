@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="footerContainer">
       <Row justify="space-between" align="middle">
-        <Col span={23} offset={1} md={{ span: 8, offset: 1 }}>
-          <img src={logo} className="img-logo" alt="logo" />
+        <Col span={10} offset={1} md={{ span: 8, offset: 1 }}>
+          <h1 className="logo">WaveTrade</h1>
           <p>power your alpha</p>
         </Col>
 

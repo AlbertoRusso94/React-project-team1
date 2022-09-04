@@ -1,8 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import Lottie from 'lottie-react';
+import tradingAnim from '../../imgs/trading.json';
+import personAnim from '../../imgs/persontrading.json';
+import speedAnim from '../../imgs/pocketrocket.json';
+import AIAnim from '../../imgs/ai.json';
+import virtualAnim from '../../imgs/virtual.json';
 import './Tab.css';
+import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'antd';
 import { Tabs } from 'antd';
 const { TabPane } = Tabs;
+
 
 export const Tab = () => {
   // const [key, setKey] = useState(1);
@@ -50,13 +57,17 @@ export const Tab = () => {
                 <h1>Why Us?</h1>
                 <div className="contentContainer">
                   <div className="tabIcon">
-                    <lord-icon
+                    {/* <lord-icon
                       src="https://cdn.lordicon.com/yeallgsa.json"
                       trigger="loop"
                       colors="primary:#eeeeee,secondary:#00adb5"
                       style={{ width: '100%', height: '100%' }}
-                    ></lord-icon>
+                    ></lord-icon> */}
                   </div>
+                  <div className="widthAnimation">
+                    <Lottie animationData={tradingAnim} loop={true} />
+                  </div>
+                  
                   <h3>
                     Ex-traders building the best option AI algorithm, which
                     makes large profits in minutes a day. We are ex-quants with
@@ -87,13 +98,9 @@ export const Tab = () => {
                     data from multiple sources to quickly and clearly show you
                     the best options to trade all DONE FOR YOU.
                   </h3>
-                  <lord-icon
-                    src="https://cdn.lordicon.com/gqdnbnwt.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    className="tabIcon"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
+                  <div className="widthAnimation">
+                    <Lottie animationData={AIAnim} loop={true} />
+                  </div>
                 </div>
               </div>
             </TabPane>
@@ -102,14 +109,9 @@ export const Tab = () => {
               <div className="text-left">
                 <h1>Speed & Time are at our Core</h1>
                 <div className="contentContainer">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/kbtmbyzy.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    state="loop"
-                    className="tabIcon"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
+                  <div className="widthAnimation">
+                    <Lottie animationData={speedAnim} loop={true} />
+                  </div>
                   <h3>
                     Speed means everything in trading. With perfectly timed
                     notifications to place winning trades ahead of your
@@ -131,13 +133,9 @@ export const Tab = () => {
                     researching each possible trade ahead of time and recommend
                     you the best plays
                   </h3>
-                  <lord-icon
-                    src="https://cdn.lordicon.com/tyounuzx.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    className="tabIcon"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
+                  <div className="widthAnimation">
+                    <Lottie animationData={virtualAnim} loop={true} />
+                  </div>
                 </div>
               </div>
             </TabPane>
@@ -151,12 +149,9 @@ export const Tab = () => {
               <div className="text-left">
                 <h1>Powerful for Beginners & Seasoned Professionals alike</h1>
                 <div className="contentContainer">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/qhviklyi.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
+                  <div className="widthAnimation">
+                    <Lottie animationData={personAnim} loop={true}/>
+                  </div>
                   <h3>
                     Whether you are just starting your journey with options or
                     work on the street yourself, our tools are easy enough to

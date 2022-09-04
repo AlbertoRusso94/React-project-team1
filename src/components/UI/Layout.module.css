@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap'); */
+
+
 
 html {
   width: 100vw;
@@ -11,20 +13,10 @@ html {
 }
 
 body {
-  background-color: rgb(17, 21, 27);
+/*   background-color: rgb(17, 21, 27); */
   width: 100vw;
   height: 100vh;
   /* font-family: 'Ubuntu', sans-serif;
   font-family: 'Roboto Slab', serif; */
-  font-family: 'Quicksand', sans-serif;
   overflow-x: hidden;
-}
-.appContainer {
-  width: 100%;
-  height: 100vh;
-  background: radial-gradient(
-    250px circle at 5% 50%,
-    #00adb5 80%,
-    rgba(17, 21, 27, 1) 90%
-  );
 }

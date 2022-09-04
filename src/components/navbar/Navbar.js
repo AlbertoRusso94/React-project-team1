@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
 import logo from '../../imgs/logo.png';
+/* import svgLogo from '../../imgs/data-wave.svg' */
 import { Link, useLocation } from 'react-router-dom';
 
 export default function Navbar({ stored, setStored }) {
@@ -35,8 +36,12 @@ export default function Navbar({ stored, setStored }) {
     <Row>
       <Col span={24}>
         <nav className="menuBar navHome">
-          <div className="logo">
-            <img src={logo} alt="logo" className="navImg" />
+          <div className="navbarLogo">
+            <div>
+              <h1 className="logo">WaveTrade</h1>
+            </div>
+            <h4 className="navsubtitle">Features</h4>
+            <h4 className='navsubtitle'>Pricing</h4>
           </div>
           <div className="menuCon navBtnCont">
             {/* <Button className="barsMenu" type="primary" onClick={showDrawer}>

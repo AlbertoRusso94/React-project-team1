@@ -5,6 +5,8 @@ import { Row, Col } from 'antd';
 import { Typography } from 'antd';
 import { Button } from 'antd';
 
+
+
 const { Title } = Typography;
 
 const Hero = () => {
@@ -12,10 +14,11 @@ const Hero = () => {
     <div className="heroContainer">
       <Row justify="space-between" align="middle" style={{ height: '100%' }} gutter={[16, 32]}>
         <Col span={22} offset={2} order={2} md={{ span: 10, order: 1 }} xs={{ order: 1 }}>
-          <Title className="textHero">THE ONLY DONE FOR YOU OPTION PICKER</Title>
-          <Title className="textHero" level={4}>
+          <h1 className="titleHero">THE ONLY DONE<br></br> 
+          FOR YOU OPTION<br></br> PICKER</h1>
+          <h4 className="subtitleHero" level={4}>
             Get trade alerts. Cancel anytime.
-          </Title>
+          </h4>
           {/* <Title className="textHero" level={5}>
             Enter your email to create or restart your membership
           </Title>
@@ -37,7 +40,7 @@ const Hero = () => {
           xs={{ order: 2 }}
           style={{ height: '100%' }}
         >
-          <img src={foto} alt="foto" className="hero-img" />
+        {/*   <img src={foto} alt="foto" className="hero-img" /> */}
         </Col>
       </Row>
     </div>

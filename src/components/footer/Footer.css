@@ -1,8 +1,13 @@
-.img-logo {
-  width: 40%;
-  margin-bottom: 1rem;
+.logo{
+  background-image: url('../../imgs/data-wave.svg');
+  background-size:cover;
+  font-family: 'Inknut Antiqua', serif;
+  padding: 10px;
+  color:white;
+  font-weight:bold;
+  margin:0;
+  font-size: 30px;
 }
-
 .footer-links {
   text-decoration: none;
 }
@@ -12,7 +17,7 @@
 }
 
 .footerContainer {
-  background-color: #393e46;
+  background-color: #0F143D;
   color: #eee;
   padding: 2rem 4rem;
 }

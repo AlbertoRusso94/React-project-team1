@@ -1,14 +1,13 @@
 .abbContainer {
-  width: 100%;
-  padding: 8rem 0;
+  width:100vw;
+  height:110vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background: radial-gradient(
-    250px circle at 50% 50%,
-    rgb(255, 153, 0) 0%,
-    rgba(17, 21, 27, 1) 100%
-  );
+  background-image: url('../../imgs/cristallo.png');
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
 }
 
 .card {
