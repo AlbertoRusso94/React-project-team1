@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
 
 .navHome {
   position: fixed;
@@ -19,6 +22,7 @@
   background-color: #0F143DAA;
   backdrop-filter: blur(3px);
   z-index: 9999;
+  margin-right:12px;
 }
 
 .navbarLogo{
@@ -33,7 +37,8 @@
 background-image: url('../../imgs/data-wave.svg');
 background-size:cover;
 background-position:center;
-font-family: 'Inknut Antiqua';
+/* font-family: 'Inknut Antiqua'; */
+font-family: 'Quantico', sans-serif;
 padding: 10px;
   color:white;
   font-weight:bold;
@@ -44,7 +49,7 @@ padding: 10px;
   font-size: 18px;
   color:white;
   margin:0;
-  font-family: 'Lora', serif;
+  font-family: 'Encode Sans Expanded', sans-serif;
 }
 
 .navBtnCont {

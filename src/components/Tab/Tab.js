@@ -54,16 +54,8 @@ export const Tab = () => {
           >
             <TabPane tab="Why Us?" key="1" className="d-flex" id="tab-1">
               <div className="text-left">
-                <h1>Why Us?</h1>
+              <span>Why us?</span>
                 <div className="contentContainer">
-                  <div className="tabIcon">
-                    {/* <lord-icon
-                      src="https://cdn.lordicon.com/yeallgsa.json"
-                      trigger="loop"
-                      colors="primary:#eeeeee,secondary:#00adb5"
-                      style={{ width: '100%', height: '100%' }}
-                    ></lord-icon> */}
-                  </div>
                   <div className="widthAnimation">
                     <Lottie animationData={tradingAnim} loop={true} />
                   </div>
@@ -88,15 +80,20 @@ export const Tab = () => {
               className="d-flex"
             >
               <div className="text-left">
-                <h1>Competitive Advantage of Artificial Intelligence</h1>
                 <div className="contentContainer">
-                  <h3>
+                  <div className="textTabs">
+                  <h1>Competitive Advantage of Artificial Intelligence</h1>
+                  <p>
                     Harness the power of industry leading A.I. backed
-                    algorithms. Similar algorithms the top hedge funds use are
-                    now at your fingertips. Our HotScore technology aggregates
-                    data from multiple sources to quickly and clearly show you
+                    algorithms.<br></br> 
+                    Similar algorithms the top hedge funds use are<br></br>
+                    now at your fingertips. Our<br></br> 
+                    HotScore technology aggregates
+                    data from multiple sources<br></br> 
+                    to quickly and clearly show you<br></br>
                     the best options to trade all DONE FOR YOU.
-                  </h3>
+                  </p>
+                  </div>
                   <div className="widthAnimation">
                     <Lottie animationData={AIAnim} loop={true} />
                   </div>
@@ -111,13 +108,16 @@ export const Tab = () => {
                   <div className="widthAnimation">
                     <Lottie animationData={speedAnim} loop={true} />
                   </div>
-                  <h3>
-                    Speed means everything in trading. With perfectly timed
-                    notifications to place winning trades ahead of your
-                    competition, never miss another opportunity with all the
-                    best option trades delivered daily to your inbox at market
+                  <p>
+                    Speed means everything in trading. With perfectly timed<br></br>
+                    notifications to place<br></br> 
+                    winning trades ahead of your
+                    competition,<br></br> 
+                    never miss another opportunity with all the
+                    best option trades<br></br> 
+                    delivered daily to your inbox at market
                     open.
-                  </h3>
+                  </p>
                 </div>
               </div>
             </TabPane>
@@ -126,12 +126,15 @@ export const Tab = () => {
               <div className="text-left">
                 <h1>Built in Options Chain Scanning</h1>
                 <div className="contentContainer">
-                  <h3>
-                    Overwhelmed by varying strike prices and which options to
-                    buy? We scan the entire options chain so you don’t have to,
-                    researching each possible trade ahead of time and recommend
+                  <p>
+                    Overwhelmed by varying strike prices and<br></br> 
+                    which options to
+                    buy? We scan the entire options chain<br></br> 
+                    so you don’t have to,
+                    researching each possible trade<br></br> 
+                    ahead of time and recommend
                     you the best plays
-                  </h3>
+                  </p>
                   <div className="widthAnimation">
                     <Lottie animationData={virtualAnim} loop={true} />
                   </div>
@@ -151,12 +154,15 @@ export const Tab = () => {
                   <div className="widthAnimation">
                     <Lottie animationData={personAnim} loop={true}/>
                   </div>
-                  <h3>
-                    Whether you are just starting your journey with options or
-                    work on the street yourself, our tools are easy enough to
-                    use starting on day 1 and give you the competitive knowledge
-                    learned from years of trial & error.
-                  </h3>
+                  <p>
+                    Whether you are just starting your<br></br> 
+                    journey with options or
+                    work on the street yourself,<br></br> 
+                    our tools are easy enough to
+                    use starting on day 1 and<br></br> 
+                    give you the competitive knowledge
+                    learned from years<br></br> of trial & error.
+                  </p>
                 </div>
               </div>
             </TabPane>

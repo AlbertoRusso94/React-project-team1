@@ -1,12 +1,15 @@
 import './Navbar.css';
 import BottoneModale from './BottoneSignin';
 import BottoneSignUp from './BottoneSignUp';
+import { createPortal } from 'react-dom';
 import { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
 import logo from '../../imgs/logo.png';
 /* import svgLogo from '../../imgs/data-wave.svg' */
 import { Link, useLocation } from 'react-router-dom';
+
+
 
 export default function Navbar({ stored, setStored }) {
   const location = useLocation();
@@ -82,4 +85,12 @@ export default function Navbar({ stored, setStored }) {
       </Col>
     </Row>
   );
+}
+
+export function RenderedNavbar(props){
+  return(
+    <>
+      {createPortal(<Navbar stored={props.stored} setStored={props.setStored} />, document.getElementById('navbarContainer'))}
+    </>
+  )
 }
