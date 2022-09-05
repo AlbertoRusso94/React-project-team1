@@ -8,11 +8,11 @@ module.exports = {
         lessLoaderOptions: {
           lessOptions: {
             modifyVars: {
-              '@primary-color': '#00ADB5',
+              /* '@primary-color': '#00ADB5', */
               '@btn-primary-color': '#fffff',
               // '@component-background': '#98f',
-              '@btn-primary-bg': '#CC00FF',
-              '@btn-secondary-bg': '#CC00FF',
+              /* '@btn-primary-bg': '#CC00FF',
+              '@btn-secondary-bg': '#CC00FF', */
               '@tabs-card-active-color': '#00ADB5',
               '@tabs-ink-bar-color': '#00ADB5',
               '@tabs-highlight-color': '#00ADB5',

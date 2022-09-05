@@ -44,7 +44,7 @@ export const Tab = () => {
     <div className="tabContainer">
       <div className="gradientBg" style={{ left: `${left}%` }} />
       <Row>
-        <Col span={24}>
+        <Col span={24} className="colTabs">
           <Tabs
             defaultActiveKey="1"
             // activeKey={key.toString()}
@@ -68,17 +68,16 @@ export const Tab = () => {
                     <Lottie animationData={tradingAnim} loop={true} />
                   </div>
                   
-                  <h3>
-                    Ex-traders building the best option AI algorithm, which
-                    makes large profits in minutes a day. We are ex-quants with
-                    combined 37 years of experience. Optionsfy software picks
-                    the ticker, strikes and expiration dates for you so you can
-                    profit without the long guesswork. It's powered by an
-                    algorithm fed with 10 years of data and 10 factors proven to
-                    work. Optionsfy saves you time and makes you more profitable
-                    with high return, consistent trades in minutes in ALL MARKET
-                    ENVIRONMENTS.
-                  </h3>
+                  <p>
+                    Speed means everything in trading. With perfectly timed<br></br>
+                    notifications to place<br></br> 
+                    winning trades ahead of your
+                    competition,<br></br> 
+                    never miss another opportunity with all the
+                    best option trades<br></br> 
+                    delivered daily to your inbox at market
+                    open.
+                  </p>
                 </div>
               </div>
             </TabPane>

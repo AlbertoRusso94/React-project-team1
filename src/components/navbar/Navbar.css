@@ -8,12 +8,16 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  left:0;
+  right:0;
   gap: 2rem;
 /*   padding: 2rem; */
 /*   margin-bottom: 10rem; */
-  width: 100%;
+  /* width: 100%; */
   align-items: center;
-  background-color: #0F143D;
+  /* background-color: #0F143D; */
+  background-color: #0F143DAA;
+  backdrop-filter: blur(3px);
   z-index: 9999;
 }
 
@@ -29,7 +33,7 @@
 background-image: url('../../imgs/data-wave.svg');
 background-size:cover;
 background-position:center;
-font-family: 'Inknut Antiqua', serif;
+font-family: 'Inknut Antiqua';
 padding: 10px;
   color:white;
   font-weight:bold;
