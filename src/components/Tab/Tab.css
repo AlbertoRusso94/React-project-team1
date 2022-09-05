@@ -45,6 +45,7 @@ background: linear-gradient(310deg, rgba(255,255,255,1) 34%, rgba(191,210,227,1)
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction:row;
 }
 .widthAnimation{
   width: 500px;
@@ -91,6 +92,7 @@ background: linear-gradient(310deg, rgba(255,255,255,1) 34%, rgba(191,210,227,1)
 .text-left span {
   font-size: 35px;
   font-family: 'Encode Sans Expanded', sans-serif;
+  text-align:center;
   font-weight: 800;
   /*   color: rgb(191, 210, 227) !important; */
   color: #0F143D !important;

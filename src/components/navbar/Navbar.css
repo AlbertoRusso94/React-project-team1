@@ -9,11 +9,10 @@
 .navHome {
   position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   left:0;
   right:0;
-  gap: 2rem;
 /*   padding: 2rem; */
 /*   margin-bottom: 10rem; */
   /* width: 100%; */
@@ -26,6 +25,7 @@
 }
 
 .navbarLogo{
+  margin-left: 5rem;
   display:flex;
   flex-direction: row;
   align-items:center;
@@ -53,7 +53,7 @@ padding: 10px;
 }
 
 .navBtnCont {
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: center;
   gap: 40px;

@@ -54,12 +54,12 @@ export const Tab = () => {
           >
             <TabPane tab="Why Us?" key="1" className="d-flex" id="tab-1">
               <div className="text-left">
-              <span>Why us?</span>
                 <div className="contentContainer">
                   <div className="widthAnimation">
                     <Lottie animationData={tradingAnim} loop={true} />
                   </div>
-                  
+                  <div className="textTabs">
+                  <span>Why us?</span>
                   <p>
                     Speed means everything in trading. With perfectly timed<br></br>
                     notifications to place<br></br> 
@@ -70,6 +70,11 @@ export const Tab = () => {
                     delivered daily to your inbox at market
                     open.
                   </p>
+
+                  </div>
+                  <div>
+
+                  </div>
                 </div>
               </div>
             </TabPane>
@@ -82,7 +87,7 @@ export const Tab = () => {
               <div className="text-left">
                 <div className="contentContainer">
                   <div className="textTabs">
-                  <h1>Competitive Advantage of Artificial Intelligence</h1>
+                  <span>Competitive Advantage of<br></br>Artificial Intelligence</span>
                   <p>
                     Harness the power of industry leading A.I. backed
                     algorithms.<br></br> 
@@ -103,11 +108,12 @@ export const Tab = () => {
 
             <TabPane tab="Speed & Time " key="3" className="d-flex" id="tab-3">
               <div className="text-left">
-                <h1>Speed & Time are at our Core</h1>
                 <div className="contentContainer">
                   <div className="widthAnimation">
                     <Lottie animationData={speedAnim} loop={true} />
                   </div>
+                  <div className="textTabs">
+                  <span>Speed & Time are at our Core</span>
                   <p>
                     Speed means everything in trading. With perfectly timed<br></br>
                     notifications to place<br></br> 
@@ -118,23 +124,31 @@ export const Tab = () => {
                     delivered daily to your inbox at market
                     open.
                   </p>
+
+                  </div>
                 </div>
               </div>
             </TabPane>
 
             <TabPane tab="Built in Options" key="4" className="d-flex">
               <div className="text-left">
-                <h1>Built in Options Chain Scanning</h1>
                 <div className="contentContainer">
-                  <p>
-                    Overwhelmed by varying strike prices and<br></br> 
-                    which options to
-                    buy? We scan the entire options chain<br></br> 
-                    so you don’t have to,
-                    researching each possible trade<br></br> 
-                    ahead of time and recommend
-                    you the best plays
-                  </p>
+                <div>
+                <div className="textTabs">
+                    <span>Built in Options Chain Scanning</span>
+                    <p>
+                      Overwhelmed by varying strike prices and<br></br> 
+                      which options to
+                      buy? We scan the entire options chain<br></br> 
+                      so you don’t have to,
+                      researching each possible trade<br></br> 
+                      ahead of time and recommend
+                      you the best plays
+                    </p>
+
+                </div>
+
+                </div>
                   <div className="widthAnimation">
                     <Lottie animationData={virtualAnim} loop={true} />
                   </div>
@@ -149,11 +163,12 @@ export const Tab = () => {
               id="tab-5"
             >
               <div className="text-left">
-                <h1>Powerful for Beginners & Seasoned Professionals alike</h1>
                 <div className="contentContainer">
                   <div className="widthAnimation">
                     <Lottie animationData={personAnim} loop={true}/>
                   </div>
+                  <div className="textTabs">
+                  <span>Powerful for Beginners & Seasoned<br></br> Professionals alike</span>
                   <p>
                     Whether you are just starting your<br></br> 
                     journey with options or
@@ -163,6 +178,8 @@ export const Tab = () => {
                     give you the competitive knowledge
                     learned from years<br></br> of trial & error.
                   </p>
+
+                  </div>
                 </div>
               </div>
             </TabPane>
