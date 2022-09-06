@@ -43,8 +43,8 @@ export default function Navbar({ stored, setStored }) {
             <div>
               <h1 className="logo">WaveTrade</h1>
             </div>
-            <h4 className="navsubtitle">Features</h4>
-            <h4 className='navsubtitle'>Pricing</h4>
+            <a href="#" className="navsubtitle">Features</a>
+            <a href="#" className='navsubtitle'>Pricing</a>
           </div>
           <div className="menuCon navBtnCont">
             {/* <Button className="barsMenu" type="primary" onClick={showDrawer}>
@@ -66,17 +66,41 @@ export default function Navbar({ stored, setStored }) {
 
             {url === '/' ? (
               stored && (
-                <Button type="primary">
+                <Button style={{
+                  'width': '170px',
+                  'height': '40px',
+                  'backgroundColor': '#CC00FF',
+                  'borderRadius': '6px',
+                  'color': '#ffff',
+                  'fontWeight': 'bold',
+                  'fontSize': '15px'
+                }}>
                   <Link to="/dashboard">Dashboard</Link>
                 </Button>
               )
             ) : (
-              <Button type="primary">
+              <Button style={{
+                'width': '170px',
+                'height': '40px',
+                'backgroundColor': '#CC00FF',
+                'borderRadius': '6px',
+                'color': '#ffff',
+                'fontWeight': 'bold',
+                'fontSize': '15px'
+              }}>
                 <Link to="/">Homepage</Link>
               </Button>
             )}
             {stored && (
-              <Button onClick={handleLogout}>
+              <Button onClick={handleLogout} style={{
+                'width': '170px',
+                'height': '40px',
+                'backgroundColor': '#00ADB5',
+                'borderRadius': '6px',
+                'color': '#ffff',
+                'fontWeight': 'bold',
+                'fontSize': '15px'
+            }}>
                 <Link to="/">Logout</Link>
               </Button>
             )}

@@ -1,7 +1,6 @@
 import { Button, Modal } from 'antd';
 import { useState } from 'react';
 import FormSignUp from './FormSignUp';
-import './Bottoni.css';
 
 const BottoneSignUp = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
