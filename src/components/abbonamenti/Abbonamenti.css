@@ -89,27 +89,27 @@
   .abbContainer {
     flex-direction: column;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
   }
 
   .card {
-    width: 55%;
+    width:auto;
+    height:auto;
   }
 }
 
 @media screen and (max-width: 576px) {
   .abbContainer {
-    flex-direction: column;
-    justify-content: center;
-    gap:0;
+    width:auto;
   }
   .ant-card{
     margin-top: 5rem !important;
   }
 
   .card {
-    padding: 1rem !important;
-    width: 80%;
+    padding: 0.5rem !important;
+    width: auto;
+    height:auto;
   }
 
   .ant-card-body {
