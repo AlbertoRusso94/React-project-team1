@@ -11,7 +11,7 @@ const { Title } = Typography;
 
 const Hero = () => {
   return (
-    <div className="heroContainer">
+    <div className="heroContainer" id="Hero">
       <Row justify="space-between" align="middle" style={{ height: '100%' }} gutter={[16, 32]}>
         <Col span={22} offset={2} order={2} md={{ span: 10, order: 1 }} xs={{ order: 1 }}>
           <h1 className="titleHero">THE ONLY DONE<br></br> 

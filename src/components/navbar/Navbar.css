@@ -43,12 +43,18 @@ padding: 10px;
   margin:0;
   font-size: 30px;
 }
+.logo:hover{
+  color: #00ADB5;
+}
 .navsubtitle{
   text-decoration:none;
   font-size: 18px;
   color:white;
   margin:0;
   font-family: 'Encode Sans Expanded', sans-serif;
+}
+.navsubtitle:hover{
+  color: #CC00FF;
 }
 
 .navBtnCont {

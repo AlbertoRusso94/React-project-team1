@@ -105,6 +105,9 @@
   .ant-card{
     margin-top: 5rem !important;
   }
+  .card p{
+    font-size: 14px;
+  }
 
   .card {
     padding: 0.5rem !important;

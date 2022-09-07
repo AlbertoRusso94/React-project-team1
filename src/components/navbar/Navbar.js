@@ -41,7 +41,7 @@ export default function Navbar({ stored, setStored }) {
         <nav className="menuBar navHome">
           <div className="navbarLogo">
             <div>
-              <h1 className="logo">WaveTrade</h1>
+              <a href="#Hero" className="logo">WaveTrade</a>
             </div>
             <a href="#Features" className="navsubtitle">Features</a>
             <a href="#Pricing" className='navsubtitle'>Pricing</a>
