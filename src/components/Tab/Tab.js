@@ -41,7 +41,7 @@ export const Tab = () => {
   };
 
   return (
-    <div className="tabContainer">
+    <div className="tabContainer" id="Features">
       <div className="gradientBg" style={{ left: `${left}%` }} />
       <Row>
         <Col span={24} className="colTabs">

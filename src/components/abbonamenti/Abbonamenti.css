@@ -31,6 +31,13 @@
   transition: 0.5s;
 }
 
+.cardContainer{
+  display:flex;
+  justify-content:center;
+  align-items:start;
+  flex-direction:column;
+}
+
 
 .card h1 {
   text-align: center;
@@ -39,6 +46,9 @@
   padding: 20px;
 }
 
+.containerCard{
+  width:100%;
+}
 .card p {
   display: flex;
   align-items: center;

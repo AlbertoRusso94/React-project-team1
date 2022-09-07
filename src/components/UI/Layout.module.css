@@ -13,14 +13,11 @@ html {
 }
 
 body {
-/*   background-color: rgb(17, 21, 27); */
   width: 100vw;
   height: 100vh;
-  /* font-family: 'Ubuntu', sans-serif;
-  font-family: 'Roboto Slab', serif; */
   overflow-x: hidden;
-/*   background: linear-gradient(310deg, rgba(255,255,255,1) 34%, #bfd2e3 65%); */
-background-color: #bfd2e3;
+  scroll-behavior: smooth;
+  background-color: #bfd2e3;
 }
 *::-webkit-scrollbar {
   width: 12px;               /* width of the entire scrollbar */

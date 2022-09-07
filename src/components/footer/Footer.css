@@ -32,6 +32,8 @@
 
 @media screen and (max-width: 576px) {
   .footerContainer {
+    height: auto;
+    width: auto;
     padding: 2rem 1rem;
   }
 

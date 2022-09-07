@@ -43,8 +43,8 @@ export default function Navbar({ stored, setStored }) {
             <div>
               <h1 className="logo">WaveTrade</h1>
             </div>
-            <a href="#" className="navsubtitle">Features</a>
-            <a href="#" className='navsubtitle'>Pricing</a>
+            <a href="#Features" className="navsubtitle">Features</a>
+            <a href="#Pricing" className='navsubtitle'>Pricing</a>
           </div>
           <div className="menuCon navBtnCont">
             {/* <Button className="barsMenu" type="primary" onClick={showDrawer}>

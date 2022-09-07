@@ -3,7 +3,7 @@ import { Card, Button } from 'antd';
 import { CheckSquareTwoTone } from '@ant-design/icons';
 
 const Abbonamenti = () => (
-  <div className="abbContainer">
+  <div className="abbContainer" id='Pricing'>
     <Card className="card" id="card1" style={{ border: '5px solid #CC00FF' }}>
       <h1>
         Only <strong>$67</strong> /month
