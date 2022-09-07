@@ -1,7 +1,7 @@
 
 import {Navigate, Outlet} from 'react-router-dom';
 
-// ricevo le props
+
 const Protected = ({user, children}) => {
 
     if (!user) {

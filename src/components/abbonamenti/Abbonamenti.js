@@ -3,8 +3,8 @@ import { Card, Button } from 'antd';
 import { CheckSquareTwoTone } from '@ant-design/icons';
 
 const Abbonamenti = () => (
-  <div className="abbContainer">
-    <Card className="card" id="card1" style={{ border: '3px solid #00ADB5' }}>
+  <div className="abbContainer" id='Pricing'>
+    <Card className="card" id="card1" style={{ border: '5px solid #CC00FF' }}>
       <h1>
         Only <strong>$67</strong> /month
       </h1>
@@ -47,10 +47,13 @@ const Abbonamenti = () => (
         <Button
           style={{
             color: '#eee',
-            padding: '2rem 4rem',
+            padding: '1.5rem 3rem',
             display: 'inline-flex',
+            backgroundColor: '#CC00FF',
             alignItems: 'center',
-            fontSize: '1.5rem',
+            fontSize: '1.3rem',
+            fontWeight: 'bold',
+            borderRadius: '10px'
           }}
           size="large"
           className="btnStandard"
@@ -60,7 +63,7 @@ const Abbonamenti = () => (
         </Button>
       </div>
     </Card>
-    <Card className="card" style={{ border: '3px solid #ff4d4f' }}>
+    <Card className="card" style={{ border: '5px solid #00ADB5' }}>
       <h1>
         Only <strong>$670</strong> /year
       </h1>
@@ -103,15 +106,17 @@ const Abbonamenti = () => (
         <Button
           style={{
             color: '#eee',
-            padding: '2rem 4rem',
+            padding: '1.5rem 3rem',
             display: 'inline-flex',
             alignItems: 'center',
-            fontSize: '1.5rem',
+            fontSize: '1.3rem',
+            fontWeight: 'bold',
+            backgroundColor: '#00ADB5',
+            borderRadius: '10px'
           }}
           size="large"
           className="btnStandard"
           type="primary"
-          danger
         >
           Subscribe Now
         </Button>

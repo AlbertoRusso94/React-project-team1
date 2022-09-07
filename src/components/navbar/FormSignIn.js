@@ -1,4 +1,5 @@
 import React from "react";
+import './formModal.css'
 import { Form, Input, Button, Checkbox } from "antd";
 
 const FormSignIn = (props) => {
@@ -11,7 +12,10 @@ const FormSignIn = (props) => {
       body: JSON.stringify(values),
     })
       .then((response) => response.json())
-      .then((response) => props.onHandleStorage(JSON.stringify(response)));
+      .then((response) => {if(response.message){ 
+        window.alert(response.message)
+        return
+      }props.onHandleStorage(JSON.stringify(response))});
   };
 
   const onFinishFailed = (errorInfo) => {
@@ -34,7 +38,7 @@ const FormSignIn = (props) => {
       onFinishFailed={onFinishFailed}
       autoComplete="off"
     >
-      <Form.Item
+      <Form.Item className="formItem"
         label="Username"
         name="username"
         rules={[
@@ -66,8 +70,14 @@ const FormSignIn = (props) => {
           span: 16,
         }}
       >
-        <Button type="primary" htmlType="submit">
-          Submit
+        <Button type="primary" htmlType="login" style={{
+          'backgroundColor': '#CC00FF',
+          'width': '120px',
+          'color': 'white',
+          'fontWeight': 'bold',
+          'border': '#00ADB5'
+        }}>
+          Login
         </Button>
       </Form.Item>
     </Form>

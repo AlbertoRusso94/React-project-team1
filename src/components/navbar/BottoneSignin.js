@@ -18,7 +18,16 @@ const BottoneModale = (props) => {
 
   return (
     <>
-      <Button type="primary" onClick={showModal}>
+      <Button className="btnNavbar btnNavbarColor" style={{
+        'width': '170px',
+        'height': '40px',
+        'backgroundColor': '#00ADB5',
+        'borderRadius': '6px',
+        'color': '#ffff',
+        'fontWeight': 'bold',
+        'fontSize': '15px'
+    }} 
+    onClick={showModal}>
         Login
       </Button>
       <Modal title="Login" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>

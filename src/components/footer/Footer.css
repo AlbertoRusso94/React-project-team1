@@ -1,24 +1,39 @@
-.img-logo {
-  width: 40%;
-  margin-bottom: 1rem;
-}
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@300;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@400;500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+
+.logo{
+  background-image: url('../../imgs/data-wave.svg');
+  background-size:cover;
+  font-family: 'Quantico', sans-serif;
+  padding: 10px;
+  color:white;
+  font-weight:bold;
+  margin:0;
+  font-size: 30px;
+}
 .footer-links {
+  font-family: 'Encode Sans SC', sans-serif;
+  color: #00ADB5;
   text-decoration: none;
 }
 
 .footer-links:hover {
-  color: orangered;
+  color: #CC00FF;
 }
 
 .footerContainer {
-  background-color: #393e46;
+  background-color: #0F143D;
   color: #eee;
+  font-family: 'Encode Sans Expanded', sans-serif;
   padding: 2rem 4rem;
 }
 
 @media screen and (max-width: 576px) {
   .footerContainer {
+    height: auto;
+    width: auto;
     padding: 2rem 1rem;
   }
 

@@ -1,11 +1,15 @@
 import './Navbar.css';
 import BottoneModale from './BottoneSignin';
 import BottoneSignUp from './BottoneSignUp';
+import { createPortal } from 'react-dom';
 import { useEffect, useState } from 'react';
 import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
 import logo from '../../imgs/logo.png';
+/* import svgLogo from '../../imgs/data-wave.svg' */
 import { Link, useLocation } from 'react-router-dom';
+
+
 
 export default function Navbar({ stored, setStored }) {
   const location = useLocation();
@@ -35,8 +39,12 @@ export default function Navbar({ stored, setStored }) {
     <Row>
       <Col span={24}>
         <nav className="menuBar navHome">
-          <div className="logo">
-            <img src={logo} alt="logo" className="navImg" />
+          <div className="navbarLogo">
+            <div>
+              <h1 className="logo"><a className="colorLogo" href="#Hero">WaveTrade</a></h1>
+            </div>
+            <a href="#Features" className="navsubtitle">Features</a>
+            <a href="#Pricing" className='navsubtitle'>Pricing</a>
           </div>
           <div className="menuCon navBtnCont">
             {/* <Button className="barsMenu" type="primary" onClick={showDrawer}>
@@ -58,17 +66,41 @@ export default function Navbar({ stored, setStored }) {
 
             {url === '/' ? (
               stored && (
-                <Button type="primary">
+                <Button style={{
+                  'width': '170px',
+                  'height': '40px',
+                  'backgroundColor': '#CC00FF',
+                  'borderRadius': '6px',
+                  'color': '#ffff',
+                  'fontWeight': 'bold',
+                  'fontSize': '15px'
+                }}>
                   <Link to="/dashboard">Dashboard</Link>
                 </Button>
               )
             ) : (
-              <Button type="primary">
+              <Button style={{
+                'width': '170px',
+                'height': '40px',
+                'backgroundColor': '#CC00FF',
+                'borderRadius': '6px',
+                'color': '#ffff',
+                'fontWeight': 'bold',
+                'fontSize': '15px'
+              }}>
                 <Link to="/">Homepage</Link>
               </Button>
             )}
             {stored && (
-              <Button onClick={handleLogout}>
+              <Button onClick={handleLogout} style={{
+                'width': '170px',
+                'height': '40px',
+                'backgroundColor': '#00ADB5',
+                'borderRadius': '6px',
+                'color': '#ffff',
+                'fontWeight': 'bold',
+                'fontSize': '15px'
+            }}>
                 <Link to="/">Logout</Link>
               </Button>
             )}
@@ -77,4 +109,12 @@ export default function Navbar({ stored, setStored }) {
       </Col>
     </Row>
   );
+}
+
+export function RenderedNavbar(props){
+  return(
+    <>
+      {createPortal(<Navbar stored={props.stored} setStored={props.setStored} />, document.getElementById('navbarContainer'))}
+    </>
+  )
 }

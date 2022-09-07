@@ -1,5 +1,6 @@
 import { Button, Checkbox, Form, Input } from 'antd';
 import React from 'react';
+import './formModal.css';
 
 
 
@@ -52,6 +53,7 @@ const FormSignUp = () => {
         label="Email"
         rules={[
           {
+            required: true,
             type: 'email',
           },
         ]}
@@ -78,8 +80,14 @@ const FormSignUp = () => {
           span: 16,
         }}
       >
-        <Button type="primary" htmlType="submit">
-          Submit
+        <Button htmlType="submit" style={{
+          'backgroundColor': '#00ADB5',
+          'width': '120px',
+          'color': 'white',
+          'fontWeight': 'bold',
+          'border': '#00ADB5'
+        }}>
+          Sign Up
         </Button>
       </Form.Item>
     </Form>

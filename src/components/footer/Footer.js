@@ -7,8 +7,8 @@ const Footer = () => {
   return (
     <div className="footerContainer">
       <Row justify="space-between" align="middle">
-        <Col span={23} offset={1} md={{ span: 8, offset: 1 }}>
-          <img src={logo} className="img-logo" alt="logo" />
+        <Col span={10} offset={1} md={{ span: 8, offset: 1 }}>
+          <h1 className="logo">WaveTrade</h1>
           <p>power your alpha</p>
         </Col>
 
@@ -16,7 +16,7 @@ const Footer = () => {
           <Row gutter={[8, 16]}>
             <Col>
               <a
-                href="https://www.optionsfy.com/terms-of-services"
+                href="#"
                 className="footer-links"
               >
                 TERMS OF SERVICE
@@ -24,7 +24,7 @@ const Footer = () => {
             </Col>
             <Col>
               <a
-                href="https://www.optionsfy.com/privacy-policy"
+                href="#"
                 className="footer-links"
               >
                 PRIVACY POLICY
@@ -32,7 +32,7 @@ const Footer = () => {
             </Col>
             <Col>
               <a
-                href="https://www.optionsfy.com/disclaimer"
+                href="#"
                 className="footer-links"
               >
                 DISCLAIMER
@@ -52,7 +52,7 @@ const Footer = () => {
             EDUCATIONAL AND RESEARCH PURPOSES AND SHOULD NOT BE CONSTRUED AS
             INDIVIDUAL INVESTMENT ADVICE. More info{' '}
             <a
-              href="https://www.optionsfy.com/disclaimer"
+              href="#"
               className="footer-links"
             >
               here

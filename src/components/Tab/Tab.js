@@ -1,8 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import Lottie from 'lottie-react';
+import tradingAnim from '../../imgs/trading.json';
+import personAnim from '../../imgs/persontrading.json';
+import speedAnim from '../../imgs/pocketrocket.json';
+import AIAnim from '../../imgs/ai.json';
+import virtualAnim from '../../imgs/virtual.json';
 import './Tab.css';
+import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'antd';
 import { Tabs } from 'antd';
 const { TabPane } = Tabs;
+
 
 export const Tab = () => {
   // const [key, setKey] = useState(1);
@@ -34,10 +41,10 @@ export const Tab = () => {
   };
 
   return (
-    <div className="tabContainer">
+    <div className="tabContainer" id="Features">
       <div className="gradientBg" style={{ left: `${left}%` }} />
       <Row>
-        <Col span={24}>
+        <Col span={24} className="colTabs">
           <Tabs
             defaultActiveKey="1"
             // activeKey={key.toString()}
@@ -47,27 +54,27 @@ export const Tab = () => {
           >
             <TabPane tab="Why Us?" key="1" className="d-flex" id="tab-1">
               <div className="text-left">
-                <h1>Why Us?</h1>
                 <div className="contentContainer">
-                  <div className="tabIcon">
-                    <lord-icon
-                      src="https://cdn.lordicon.com/yeallgsa.json"
-                      trigger="loop"
-                      colors="primary:#eeeeee,secondary:#00adb5"
-                      style={{ width: '100%', height: '100%' }}
-                    ></lord-icon>
+                  <div className="widthAnimation">
+                    <Lottie animationData={tradingAnim} loop={true} />
                   </div>
-                  <h3>
-                    Ex-traders building the best option AI algorithm, which
-                    makes large profits in minutes a day. We are ex-quants with
-                    combined 37 years of experience. Optionsfy software picks
-                    the ticker, strikes and expiration dates for you so you can
-                    profit without the long guesswork. It's powered by an
-                    algorithm fed with 10 years of data and 10 factors proven to
-                    work. Optionsfy saves you time and makes you more profitable
-                    with high return, consistent trades in minutes in ALL MARKET
-                    ENVIRONMENTS.
-                  </h3>
+                  <div className="textTabs">
+                  <span>Why us?</span>
+                  <p>
+                    Speed means everything in trading. With perfectly timed<br></br>
+                    notifications to place<br></br> 
+                    winning trades ahead of your
+                    competition,<br></br> 
+                    never miss another opportunity with all the
+                    best option trades<br></br> 
+                    delivered daily to your inbox at market
+                    open.
+                  </p>
+
+                  </div>
+                  <div>
+
+                  </div>
                 </div>
               </div>
             </TabPane>
@@ -78,66 +85,73 @@ export const Tab = () => {
               className="d-flex"
             >
               <div className="text-left">
-                <h1>Competitive Advantage of Artificial Intelligence</h1>
                 <div className="contentContainer">
-                  <h3>
+                  <div className="textTabs">
+                  <span>Competitive Advantage of<br></br>Artificial Intelligence</span>
+                  <p>
                     Harness the power of industry leading A.I. backed
-                    algorithms. Similar algorithms the top hedge funds use are
-                    now at your fingertips. Our HotScore technology aggregates
-                    data from multiple sources to quickly and clearly show you
+                    algorithms.<br></br> 
+                    Similar algorithms the top hedge funds use are<br></br>
+                    now at your fingertips. Our<br></br> 
+                    HotScore technology aggregates
+                    data from multiple sources<br></br> 
+                    to quickly and clearly show you<br></br>
                     the best options to trade all DONE FOR YOU.
-                  </h3>
-                  <lord-icon
-                    src="https://cdn.lordicon.com/gqdnbnwt.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    className="tabIcon"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
+                  </p>
+                  </div>
+                  <div className="widthAnimation">
+                    <Lottie animationData={AIAnim} loop={true} />
+                  </div>
                 </div>
               </div>
             </TabPane>
 
             <TabPane tab="Speed & Time " key="3" className="d-flex" id="tab-3">
               <div className="text-left">
-                <h1>Speed & Time are at our Core</h1>
                 <div className="contentContainer">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/kbtmbyzy.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    state="loop"
-                    className="tabIcon"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
-                  <h3>
-                    Speed means everything in trading. With perfectly timed
-                    notifications to place winning trades ahead of your
-                    competition, never miss another opportunity with all the
-                    best option trades delivered daily to your inbox at market
+                  <div className="widthAnimation">
+                    <Lottie animationData={speedAnim} loop={true} />
+                  </div>
+                  <div className="textTabs">
+                  <span>Speed & Time are at our Core</span>
+                  <p>
+                    Speed means everything in trading. With perfectly timed<br></br>
+                    notifications to place<br></br> 
+                    winning trades ahead of your
+                    competition,<br></br> 
+                    never miss another opportunity with all the
+                    best option trades<br></br> 
+                    delivered daily to your inbox at market
                     open.
-                  </h3>
+                  </p>
+
+                  </div>
                 </div>
               </div>
             </TabPane>
 
             <TabPane tab="Built in Options" key="4" className="d-flex">
               <div className="text-left">
-                <h1>Built in Options Chain Scanning</h1>
                 <div className="contentContainer">
-                  <h3>
-                    Overwhelmed by varying strike prices and which options to
-                    buy? We scan the entire options chain so you don’t have to,
-                    researching each possible trade ahead of time and recommend
-                    you the best plays
-                  </h3>
-                  <lord-icon
-                    src="https://cdn.lordicon.com/tyounuzx.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    className="tabIcon"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
+                <div>
+                <div className="textTabs">
+                    <span>Built in Options Chain Scanning</span>
+                    <p>
+                      Overwhelmed by varying strike prices and<br></br> 
+                      which options to
+                      buy? We scan the entire options chain<br></br> 
+                      so you don’t have to,
+                      researching each possible trade<br></br> 
+                      ahead of time and recommend
+                      you the best plays
+                    </p>
+
+                </div>
+
+                </div>
+                  <div className="widthAnimation">
+                    <Lottie animationData={virtualAnim} loop={true} />
+                  </div>
                 </div>
               </div>
             </TabPane>
@@ -149,20 +163,23 @@ export const Tab = () => {
               id="tab-5"
             >
               <div className="text-left">
-                <h1>Powerful for Beginners & Seasoned Professionals alike</h1>
                 <div className="contentContainer">
-                  <lord-icon
-                    src="https://cdn.lordicon.com/qhviklyi.json"
-                    trigger="loop"
-                    colors="primary:#eeeeee,secondary:#00adb5"
-                    style={{ width: '250px', height: '250px' }}
-                  ></lord-icon>
-                  <h3>
-                    Whether you are just starting your journey with options or
-                    work on the street yourself, our tools are easy enough to
-                    use starting on day 1 and give you the competitive knowledge
-                    learned from years of trial & error.
-                  </h3>
+                  <div className="widthAnimation">
+                    <Lottie animationData={personAnim} loop={true}/>
+                  </div>
+                  <div className="textTabs">
+                  <span>Powerful for Beginners & Seasoned<br></br> Professionals alike</span>
+                  <p>
+                    Whether you are just starting your<br></br> 
+                    journey with options or
+                    work on the street yourself,<br></br> 
+                    our tools are easy enough to
+                    use starting on day 1 and<br></br> 
+                    give you the competitive knowledge
+                    learned from years<br></br> of trial & error.
+                  </p>
+
+                  </div>
                 </div>
               </div>
             </TabPane>
