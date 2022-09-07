@@ -35,26 +35,21 @@
 }
 
 @media screen and (max-width: 820px) {
-  .heroContainer {
-    height: 85%;
+  #col {
+    width: 100%;
   }
-
-  .hero-img {
-    width: 200%;
-    height: 80%;
-    transform: translate(-35%, 7%);
+  .titleHero{
+    margin:auto;
+  }
+  #col2{
+    display:none;
   }
 }
 @media screen and (max-width: 576px) {
-  .heroContainer {
-    margin-top: 5rem;
-  }
-
-  .hero-img {
-    display: none;
-  }
-
   #col2 {
     display: none;
+  }
+  .titleHero{
+    font-size: 40px;
   }
 }

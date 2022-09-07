@@ -33,11 +33,9 @@
   gap: 20px;
 }
 .logo{
-/*   font-family: 'Podkova', serif; */
 background-image: url('../../imgs/data-wave.svg');
 background-size:cover;
 background-position:center;
-/* font-family: 'Inknut Antiqua'; */
 font-family: 'Quantico', sans-serif;
 padding: 10px;
   color:white;
@@ -61,6 +59,15 @@ padding: 10px;
 }
 
 @media screen and (max-width: 820px) {
+  .logo{
+    font-size: 20px;
+  }
+  .navbarLogo{
+    margin-left:1rem;
+  }
+  .navsubtitle{
+    font-size: 14px;
+  }
   .navBtnCont {
     width: 50%;
     justify-content: end;
@@ -68,8 +75,17 @@ padding: 10px;
   }
 }
 @media screen and (max-width: 576px) {
+  .navHome{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap: 30px;
+  }
   .navBtnCont {
     gap: 1rem;
+  }
+  .navsubtitle{
+    display:none;
   }
 
   .ant-tabs-nav-operations {
