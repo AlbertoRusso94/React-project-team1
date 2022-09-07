@@ -33,17 +33,19 @@
   gap: 20px;
 }
 .logo{
-background-image: url('../../imgs/data-wave.svg');
-background-size:cover;
-background-position:center;
-font-family: 'Quantico', sans-serif;
-padding: 10px;
-  color:white;
+  background-image: url('../../imgs/data-wave.svg');
+  background-size:cover;
+  background-position:center;
+  font-family: 'Quantico', sans-serif;
+  padding: 10px;
   font-weight:bold;
   margin:0;
   font-size: 30px;
 }
-.logo:hover{
+.colorLogo{
+  color:white;
+}
+.colorLogo:hover{
   color: #00ADB5;
 }
 .navsubtitle{
