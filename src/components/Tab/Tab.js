@@ -5,50 +5,21 @@ import speedAnim from '../../imgs/pocketrocket.json';
 import AIAnim from '../../imgs/ai.json';
 import virtualAnim from '../../imgs/virtual.json';
 import './Tab.css';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Col, Row } from 'antd';
 import { Tabs } from 'antd';
 const { TabPane } = Tabs;
 
 
 export const Tab = () => {
-  // const [key, setKey] = useState(1);
-  const [left, setLeft] = useState(100);
-
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     if (key >= 5) {
-  //       setKey(1);
-  //       setLeft(85);
-  //     } else {
-  //       setKey((prevState) => +prevState + 1);
-  //       setLeft(100 - ((key + 1) * 20 - 5));
-  //     }
-  //   }, 12000);
-
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // }, [key]);
-
-  useEffect(() => {
-    setLeft(85);
-  }, []);
-
-  const handleChange = (key) => {
-    // setKey(key);
-    setLeft(100 - ((+key + 1) * 20 - 5));
-  };
-
   return (
     <div className="tabContainer" id="Features">
-      <div className="gradientBg" style={{ left: `${left}%` }} />
+      <div className="gradientBg"/>
       <Row>
         <Col span={24} className="colTabs">
           <Tabs
             defaultActiveKey="1"
             // activeKey={key.toString()}
-            onChange={handleChange}
             centered
             style={{ color: '#eee', marginTop: '3rem' }}
           >
